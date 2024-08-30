@@ -33,7 +33,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('images/Yerba-Mate2-415x276.png'); /* Example background image */
+    background-image: url('Yerba-Mate2-415x276.png'); /* Example background image */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
