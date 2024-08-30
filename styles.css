@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+h1{
+    margin: 2rem;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.header {
+    width: 100%;
+    height: 100px; /* Adjust based on your design */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center;
+    color: white; /* Change based on your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero {
+    width: 100%;
+    height: 400px; /* Adjust based on your design */
+    background-color: #f4f4f4; /* Background color if no image is provided */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/Yerba-Mate2-415x276.png'); /* Example background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center;
+    padding-top: 20rem;
+    
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 3rem
+}
+
+.box {
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures child elements don't overflow */
+    display: flex;
+    flex-direction: column; /* Stacks image and content vertically */
+}
+
+.box-image {
+    height: 200px; /* Adjust based on your design */
+    background-size: cover;
+    background-position: center;
+}
+
+.box-content {
+    padding: 20px;
+    background-color: white; /* Solid background for text readability */
+    text-align: center;
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+.box p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: black;
+}
+.hero__h2 {
+    font-size: 2em; /* Adjust font size as needed */
+    color: white; /* Text color */
+    animation: fadeInOut 3s infinite; /* Apply the animation */
+    padding-bottom: 20rem;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
