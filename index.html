@@ -6,6 +6,7 @@
     <meta name="author" content="Eric Purtlebaugh" />
     <meta name="description" content="Yerba Mate Page" />
     <title>Eric's Yerba Mate Page</title>
+
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -23,42 +24,53 @@
       href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-      🧉The Maté Chronicles
-      
-  <ul class="navbar" id="navbar">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contacts</a></li>
-    <a class="close" href="#">
-      <img src="ham2.png" alt="close">
-    </a>
-  </ul>
-  <a class="hamburger" href="#navbar">
-      <img src="ham1.png" alt="menu">
-  </a>
+        🧉 The Maté Chronicles
+
+        <ul class="navbar" id="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#boxes">Learn More</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#">Contacts</a></li>
+          <a class="close" href="#">
+            <img src="ham2.png" alt="close" />
+          </a>
+        </ul>
+        <a class="hamburger" href="#navbar">
+          <img src="ham1.png" alt="menu" />
+        </a>
       </nav>
     </header>
     <section class="hero">
       <h1 class="hero__h1">Yerba Mate</h1>
-      <h2 class="hero__h2a">Explore the tradition...
-        <br>Make it a part of your daily ritual.</h2>
+      <h2 class="hero__h2a">
+        Explore the tradition... <br />Make it a part of your daily ritual.
+      </h2>
       <h2 class="hero__h2">Pásame un...</h2>
     </section>
 
     <main>
-      <section class="boxes">
+      <section class="boxes" id="boxes">
         <div class="box">
           <div
             class="box-image"
             style="background-image: url('bowl-yerba-626x417.png')"
+            height="640px"
+            width="427px"
           ></div>
           <div class="box-content">
-            <h2>What exactly is it?</h2>
+            <h2>What is it?</h2>
+            <p class="mate_icon">🧉</p>
+
             <p class="box__p">
               Yerba mate is a traditional South American drink made from the
               leaves of the *Ilex paraguariensis* plant. It&apos;s popular in
@@ -74,42 +86,123 @@
           ></div>
           <div class="box-content">
             <h2>How do you drink it?</h2>
+            <p class="mate_icon">🧉</p>
             <p class="box__p">
-              Yerba mate is traditionally enjoyed using a hollowed-out gourd
-              called a *mate*. Dried yerba mate leaves are placed in the gourd,
-              and hot (but not boiling) water is poured over them. The drinker
-              sips the infusion through a metal straw, or *bombilla*, which
-              filters out the leaf particles. This process is often social: the
-              person who prepares the mate, or *cebador*, drinks first and then
-              refills the gourd for others to share, with everyone taking turns
-              sipping from the same gourd.
+              It's traditionally enjoyed using a hollowed-out gourd called a
+              *mate*. Dried yerba mate leaves are placed in the gourd, and hot
+              (but not boiling) water is poured over them. The drinker sips the
+              infusion through a metal straw, or *bombilla*.
             </p>
           </div>
         </div>
         <div class="box">
           <div
             class="box-image"
-            style="background-image: url('Energy-612x612.png')"
+            style="background-image: url('sipping1.png')"
           ></div>
           <div class="box-content">
-            <h2>The taste and effects?</h2>
+            <h2>How does it taste?</h2>
+            <p class="mate_icon">🧉</p>
             <p class="box__p">
-              Yerba mate has a distinct, earthy flavor with a slight bitterness
-              and a hint of herbal notes. Some describe it as having a grassy or
-              vegetal taste. Its effects are stimulating due to its caffeine
-              content, which can enhance alertness and energy levels.
-              Additionally, yerba mate contains other compounds like theobromine
-              and theophylline, which can contribute to a feeling of increased
-              focus and mild euphoria. It&apos;s often enjoyed for its
-              invigorating qualities and its potential to boost mood and
-              concentration.
+              It has a distinct, earthy flavor with a slight bitterness and a
+              hint of herbal notes. Some describe it as having a grassy or
+              vegetal taste. Some version are smoked, giving a rich depth to the
+              flavor even more so.
             </p>
           </div>
         </div>
       </section>
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <div id="history"></div>
+      <br />
+      <section class="history">
+        <div class="box__history">
+          <img
+            src="natives1.png"
+            alt="natives"
+            description="natives drinking yerba mate"
+          />
+        </div>
+        <div class="box-content__history">
+          <div class="history__slides">
+            <div class="history__nav">
+              <input
+                class="history__radio"
+                type="radio"
+                name="slide"
+                id="slide1"
+                checked
+              />
+              <input
+                class="history__radio"
+                type="radio"
+                name="slide"
+                id="slide2"
+              />
+              <input
+                class="history__radio"
+                type="radio"
+                name="slide"
+                id="slide3"
+              />
+            </div>
+            <div class="history__content">
+              <div class="history__paragraph" id="paragraph1">
+                <h2>Who Enjoyed It First?</h2>
+                <p class="box__p__history">
+                  Yerba mate, a traditional South American beverage made from
+                  the leaves of the Ilex paraguariensis plant, has a rich
+                  history rooted in indigenous cultures. The Guaraní people,
+                  native to the regions of present-day Paraguay, Argentina, and
+                  Brazil, were the first to cultivate and consume yerba mate.
+                  They brewed it in a hollowed-out gourd and shared it socially,
+                  a practice that symbolized friendship and community. The plant
+                  was integral to their spiritual and social life, believed to
+                  offer strength and medicinal benefits.
+                </p>
+              </div>
+              <div class="history__paragraph" id="paragraph2">
+                <h2>Introduction to the World</h2>
+                <p class="box__p__history">
+                  The Spanish colonizers, who arrived in South America in the
+                  16th century, encountered yerba mate and soon became intrigued
+                  by its stimulating properties. They initially adopted the
+                  beverage, integrating it into their own social practices. Over
+                  time, yerba mate cultivation expanded, and European settlers
+                  began to recognize its commercial potential. By the 18th
+                  century, the production and trade of yerba mate had become a
+                  significant economic activity in the region, particularly as
+                  European demand grew
+                </p>
+              </div>
+              <div class="history__paragraph" id="paragraph3">
+                <h2>Modern Day</h2>
+                <p class="box__p__history">
+                  In the 19th and 20th centuries, yerba mate gained wider
+                  recognition beyond South America. The beverage became popular
+                  in countries like Argentina, Brazil, Uruguay, and Paraguay,
+                  where it remains a staple of daily life. Its global presence
+                  grew with the rise of international trade and cultural
+                  exchange, leading to its introduction to new markets. Today,
+                  yerba mate is enjoyed worldwide for its unique flavor and
+                  energizing effects, reflecting a blend of ancient traditions
+                  and modern globalization.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
     </main>
     <footer>
       <p>©️ 2024 Eric Purtlebaugh</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
