@@ -229,6 +229,7 @@ hr {
   margin-bottom: 2rem;
 }
 .box__p__history {
+  font-family: "nunito", sans-serif;
   text-indent: 30px;
   font-size: 1.3rem;
   line-height: 1.4;
@@ -292,6 +293,10 @@ footer {
   .history__paragraph {
     margin: 10px 0; /* Adjust spacing for paragraphs */
     text-align: left; /* Keep paragraphs left-aligned */
+  }
+  .health {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align content */
   }
 }
 
@@ -445,3 +450,73 @@ li a:focus {
   /* show border bottom */
   border-bottom: 1px solid white;
 }
+
+.health-benefits {
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid rgb(69, 81, 28);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.health-benefits__title {
+  font-family: "Averia Serif Libre", cursive;
+  text-shadow: 0px 0px 20px rgb(142, 167, 60);
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.health-benefits__grid {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 7rem; /* Space between items */
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the grid */
+}
+
+.health-benefit {
+  background-color: white; /* Card background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  flex: 1 1 300px; /* Allow cards to grow and shrink, with a min width */
+  max-width: 300px; /* Maximum card width */
+  text-align: center; /* Center text in cards */
+}
+
+.health-benefit:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.health-benefit img {
+  max-width: 50px; /* Icon size */
+  margin-bottom: 10px;
+}
+
+.health-benefit h3 {
+  font-family: "nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.health-benefit p {
+  font-family: "nunito", sans-serif;
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.icon-container {
+  font-size: 50px; 
+  display: flex;               /* Use flexbox to center items */
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically if needed */
+  flex-wrap: wrap;             /* Wrap icons if needed */
+  gap: 20px;                   /* Space between icons */
+  margin: 20px 0;              /* Margin around the container */
+}
+
+
+
