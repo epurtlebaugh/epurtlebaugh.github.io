@@ -18,16 +18,18 @@ body {
 
 nav {
   position: fixed;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight:400;
   top: 0;
   left: 0;
   width: 100%; /* Ensures it stretches across the viewport */
-  background-color: #1f1404;
-  color: rgb(253, 253, 252);
-  padding: 1rem;
-  font-family: "Averia Serif Libre", cursive;
+  background-color: #fefefe6f;
+  color: rgb(0, 0, 0);
+  text-shadow: #000000 0px 0px 20px;
+  padding: 2rem;
+  font-family:"roboto", sans-serif;
   z-index: 1000; /* High value to ensure it stays on top */
-  border-bottom: solid 0.15rem rgb(44, 52, 18);
 }
 hr {
   background-color: rgb(69, 81, 28);
@@ -52,7 +54,7 @@ hr {
 .hero__h1 {
   text-align: left;
   position: absolute;
-  font-size: 5vw;
+  font-size: 7vw;
   color: rgba(12, 12, 12, 0.927);
   font-family: "Averia Serif Libre", cursive;
   font-weight: 900;
@@ -100,24 +102,32 @@ hr {
 }
 
 .boxes {
-  background-color: hsl(75, 18%, 96%); /* Light background */
+  background-color: #1f1404; /* Light background */
   display: flex;
   justify-content: space-around;
   padding: 20px;
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
+.boxes__h1{
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 5rem;
+  color: rgb(242, 242, 242);
+  text-shadow: 0px 0px 20px rgb(142, 167, 60);
+  text-align: center;
+  padding-top: 15rem;
+  height:15rem;
+}
 
 .box {
   flex: 1;
-  margin: 0 10px;
+  margin: 0 30px;
   border-radius: 8px;
   box-shadow: 0 2px 10px #1f1404;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 0.1rem solid rgb(68, 80, 27);
-  background-color: #ffffff;
+  background-color: white;
   transition: transform 1.2s;
 }
 .box:hover {
@@ -126,8 +136,9 @@ hr {
 }
 
 .box-image {
-  height: 400px;
-  background-size: cover;
+  height: 500px;
+  background-size:cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -503,20 +514,22 @@ footer {
   cursor: pointer;
   /* position absolute position the icons relative to the body because they have no position relative parents*/
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
 }
 
 .hamburger {
-  background: rgb(142, 167, 60);
+  background: rgb(156, 225, 144);
   border-radius: 50%;
+  box-shadow:#040404 0 0 0 3px;
 }
 
 .close {
-  background: rgb(142, 167, 60);
+  background: rgb(156, 225, 144);
   border-radius: 50%;
+  box-shadow:#040404 0 0 0 3px
 }
 
 .hamburger img,
@@ -556,20 +569,20 @@ footer {
 
 li a {
   display: block;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-family: "roboto", sans-serif;
+  color: rgb(247, 249, 247);
+  font-weight: 400;
+  font-size: 1.8rem;
   /* remove default underline and add our own with padding and border bottom */
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.12);
   padding-bottom: 0.5rem;
 }
 
 li a:hover,
 li a:focus {
   /* show border bottom */
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(17, 255, 0);
 }
 
 .health-benefits {
@@ -660,9 +673,6 @@ li a:focus {
   display: inline-block; /* Make it behave like a button */
   justify-content: center;
   padding: 10px 20px;
-  border-radius: 5rem;
-  border: 6px solid black;
-  background-color: rgba(247, 239, 239, 0.891);
   font-family: "Averia Serif Libre", cursive;
   text-shadow: 0px 0px 70px rgb(100, 216, 113);
   font-size: 5rem;
@@ -670,7 +680,7 @@ li a:focus {
   margin-bottom: 2rem;
   margin-top: 6rem;
   text-align: center;
-  color: #3d4e2f;
+  color: #090909;
 }
 
 .recipe-card-container {
