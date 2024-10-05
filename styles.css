@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 * {
   margin: 0;
@@ -15,21 +16,28 @@ body {
   overflow-x: hidden; 
 
 }
-
-nav {
-  position: fixed;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  font-weight:400;
-  top: 0;
-  left: 0;
-  width: 100%; /* Ensures it stretches across the viewport */
-  background-color: #fefefe6f;
+.header {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:25px 40px;
   color: rgb(0, 0, 0);
-  text-shadow: #000000 0px 0px 20px;
-  padding: 2rem;
-  font-family:"roboto", sans-serif;
-  z-index: 1000; /* High value to ensure it stays on top */
+  transition: all 0.5s;
+  position:fixed;
+  width: 100%;
+  z-index: 999;
+}
+.header-scrolled{
+  background-color: #1b1205;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.15);
+  color:rgb(252, 252, 252);
+  text-shadow: 0px 0px 20px rgb(243, 243, 243);
+}
+.logo {
+  font-family:'Merriweather', serif;
+  font-size: 1.9rem;
+  font-weight: 300;
+  text-shadow: 0px 0px 20px rgb(6, 6, 6);
 }
 hr {
   background-color: rgb(69, 81, 28);
@@ -177,6 +185,7 @@ hr {
   width: 100%;
 }
 .history {
+  background-color:#cfdcb9;
   display: flex;
   flex-direction: row; /* Keep items in a row */
   align-items: flex-start; /* Align items at the start */
@@ -190,7 +199,7 @@ hr {
   font-family: "Averia Serif Libre", cursive;
   font-size: 6rem;
   text-shadow: 0px 0px 20px rgb(142, 167, 60);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .box__history {
   flex: 1; /* Allow the image to grow */
@@ -212,8 +221,9 @@ hr {
   flex-direction: column;
   justify-content: flex-start; /* Center text vertically */
   padding: 20px; /* Add padding for better spacing */
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: -7rem;
+  font-weight: 500px;
 }
 .history__nav {
   display: flex;
@@ -249,10 +259,10 @@ hr {
 }
 
 .history__paragraph h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Averia Serif Libre", cursive;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 20px rgb(142, 167, 60);
+  color: rgb(1, 1, 1);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -264,6 +274,7 @@ hr {
   font-size: 1.5rem;
   line-height: 1.4;
   height:8rem;
+  font-weight: 700;
 }
 
 .history__radio {
@@ -514,22 +525,21 @@ footer {
   cursor: pointer;
   /* position absolute position the icons relative to the body because they have no position relative parents*/
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 56px;
-  height: 56px;
+  top: 15px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
 }
 
 .hamburger {
-  background: rgb(156, 225, 144);
+  background: rgb(166, 232, 144);
   border-radius: 50%;
-  box-shadow:#040404 0 0 0 3px;
+  box-shadow:#00000012 0 0 0 8px;
 }
 
 .close {
-  background: rgb(156, 225, 144);
+  background: rgb(166, 232, 144);
   border-radius: 50%;
-  box-shadow:#040404 0 0 0 3px
 }
 
 .hamburger img,
@@ -586,8 +596,7 @@ li a:focus {
 }
 
 .health-benefits {
-  background-color: hsl(75, 18%, 96%); /* Light background */
-  border: 1px solid rgb(69, 81, 28);
+  background-color: #1f1404;; /* Light background */
   padding: 50px 20px;
   text-align: center;
   padding-top: 15rem;
@@ -599,7 +608,7 @@ li a:focus {
   text-shadow: 0px 0px 20px rgb(142, 167, 60);
   font-size: 3.5rem;
   font-weight: 900;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 6rem;
   text-align: center;
 }
@@ -663,10 +672,12 @@ li a:focus {
   background-position: center; /* Center the image */
   width: 100%; /* Make the element full width */
  /* Full height of the viewport */
-  padding: 30px 20px;
+  padding: 60px 60px;
   text-align: center;
-  border-radius: 15px;
+ 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding-top: 15rem;
+  padding-bottom: 20rem;
 }
 
 #yerba-mate-recipes h2 {
@@ -691,7 +702,7 @@ li a:focus {
 }
 
 .recipe-card {
-  background: #fafafa; /* Light beige background for the card */
+  background: #1aff0172; /* Light beige background for the card */
   border-radius: 50%; /* Circular shape */
   border: 6px solid black; 
   box-shadow: 0 2px 10px rgb(13, 13, 13);
@@ -708,9 +719,12 @@ li a:focus {
 }
 
 .recipe-card h3 {
-  font-family: "Averia Serif Libre", cursive;
+  font-family: "nunito", sans-serif;
+  letter-spacing:1.4px;
+  font-weight:700;
   font-size: 1.4rem; /* Adjusted font size */
-  color: #315512;
+  color: #fcfcfc;
+  text-shadow:0px 0px 10px rgb(0, 0, 0);
   margin: 5px 0; /* Reduced margin */
   text-align: center; /* Centers the text */
   margin-top: 2rem;
@@ -718,19 +732,21 @@ li a:focus {
 
 .recipe-card p {
   font-family: "roboto", sans-serif;
-  color: #080808; /* Slightly darker brown for paragraph */
+  color: #000000; /* Slightly darker brown for paragraph */
+  font-weight:900;
+  line-height: 2;
   text-align: center; /* Centers the paragraph */
-  font-size: 0.9rem; /* Adjusted font size */
+  font-size: 1.2rem; /* Adjusted font size */
   margin: 5px 0; /* Reduced margin */
   margin-top: 1rem;
   line-height: 1.2rem;
 }
 
 .recipe-card button {
-  font-size: .8rem;
-  background-color: #3a6635; /* Medium brown for buttons */
+  font-size: 1rem;
+  background-color: #000000; /* Medium brown for buttons */
   color: white;
-  border: none;
+  border: 2px solid #0d8d01;
   border-radius: 50%;
   padding: 5px 10px; /* Adjusted padding for better fit */
   cursor: pointer;
