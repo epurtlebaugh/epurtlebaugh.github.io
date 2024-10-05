@@ -1,3 +1,13 @@
+const headerEl = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50){
+    headerEl.classList.add('header-scrolled')
+  } else if (window.scrollY <= 50) {
+    headerEl.classList.remove('header-scrolled')
+  }
+})
+
+
 const radios = document.querySelectorAll('input[name="slide"]');
       const paragraphs = document.querySelectorAll(".history__paragraph");
 
@@ -18,3 +28,5 @@ const radios = document.querySelectorAll('input[name="slide"]');
         paragraph.style.display = "none"; // Hide all paragraphs initially
       });
       paragraphs[0].style.display = "block"; // Show the first paragraph
+
+   
