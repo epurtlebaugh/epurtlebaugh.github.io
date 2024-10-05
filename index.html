@@ -34,26 +34,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        🧉  The Maté Chronicles
+    <header class="header header-scrolled">
+      <p class="logo">🧉 The Maté Chronicles</p>
 
-        <ul class="navbar" id="navbar">
-          <li><a href="#">Home</a></li>
-          <li><a href="#boxes">Learn More</a></li>
-          <li><a href="#history">History</a></li>
-          <li><a href="#Health">Health Benefits</a></li>
-          <li><a href="#Recipes">Recipes</a></li>
-          <a class="close" href="#">
-            <img src="ham2.png" alt="close" />
-          </a>
-        </ul>
-        <a class="hamburger" href="#navbar">
-          <img src="ham1.png" alt="menu" />
+      <ul class="navbar" id="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#boxes">Learn More</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#Health">Health Benefits</a></li>
+        <li><a href="#Recipes">Recipes</a></li>
+        <a class="close" href="#">
+          <img src="ham2.png" alt="close" />
         </a>
-      </nav>
+      </ul>
+      <a class="hamburger" href="#navbar">
+        <img src="ham1.png" alt="menu" />
+      </a>
     </header>
     <section class="hero">
       <h1 class="hero__h1">Yerba Mate</h1>
@@ -66,7 +71,6 @@
     <main>
       <h1 class="boxes__h1">Let's Learn More!</h1>
       <section class="boxes" id="boxes">
-        
         <div class="box">
           <div
             class="box-image"
@@ -249,7 +253,7 @@
         <h2>Yerba Mate Recipes</h2>
         <div class="recipe-card-container">
           <div class="recipe-card">
-            <h3>Classic Yerba Mate</h3>
+            <h3>Classic Mate</h3>
             <p>
               A traditional way to enjoy yerba mate with a gourd and bombilla.
             </p>
@@ -281,7 +285,7 @@
             </a>
           </div>
           <div class="recipe-card">
-            <h3> Mate Iced Tea</h3>
+            <h3>Mate Iced Tea</h3>
             <p>A refreshing iced tea with a hint of herbal flavor.</p>
             <a
               href="https://pamelasalzman.com/fruity-iced-yerba-mate-recipe/"
@@ -306,7 +310,5 @@
     <footer>
       <p>©️ 2024 Eric Purtlebaugh</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
