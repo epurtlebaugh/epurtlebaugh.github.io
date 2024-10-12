@@ -6,40 +6,111 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 600rem;
+  background-color: #24241f;
 }
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the header content */
-  padding: 0 4%;
+  justify-content: space-between; /* Space between logo and navbar */
+  padding: 3.5rem;
   height: 9vh;
   background-color: #24241f;
-  box-shadow: 0 4px 8px 0 rgba(251, 251, 251, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(251, 251, 251, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navbar items */
+  flex: 1; /* Allow the container to grow */
+}
+
 .navbar {
   display: flex;
   align-items: center;
-  margin: 0 20px; /* Reduced margin around each navbar */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items in the navbar */
 }
 
 .navbar li {
   list-style: none;
-  margin: 0 5px; /* Closer spacing between links */
-  padding: 0 50px;
+  margin: 0 5rem; /* Adjust for spacing */
 }
 
 .navbar a {
   color: rgb(251, 251, 251);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2rem; /* Base font size */
   font-weight: 500;
   font-family: "Abril Fatface", cursive;
+  transition: font-size 0.3s; /* Smooth transition */
+}
+
+/* Responsive font sizes for navbar items */
+@media screen and (max-width: 1200px) {
+  .navbar a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .navbar a {
+    font-size: 1.1rem; /* Keep items visible */
+  }
+
+  .navbar li {
+    margin: 0 0.5rem; /* Reduce spacing further */
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .navbar a {
+    font-size: 1rem; /* Smaller font size for small screens */
+  }
+
+  .navbar li {
+    margin: 0 0.3rem; /* Further reduce margin */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 0.9rem; /* Even smaller font size */
+  }
+
+  .navbar li {
+    margin: 0 0.2rem; /* Minimal margin */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar a {
+    font-size: 0.8rem; /* Smallest font size */
+  }
+
+  .navbar li {
+    margin: 0 0.1rem; /* Minimal margin */
+  }
 }
 
 .logo {
@@ -47,46 +118,269 @@ body {
   font-weight: bold;
   font-family: "Bungee Tint", cursive;
   text-align: center;
-  margin: 0 10px; /* Reduced margin around the logo */
+  margin: 0 10px;
 }
 
+/* Responsive logo size */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.8rem; /* Scale down */
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .logo {
+    font-size: 1.5rem; /* Further scale down */
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .logo {
+    font-size: 1.3rem; /* Scale down more */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem; /* Smallest logo size */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 1rem; /* Smallest logo size */
+  }
+}
+
+i {
+  position: absolute;
+  bottom: 6%;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to center */
+  font-size: 5rem !important;
+  color: rgb(0, 0, 0);
+  animation: none; /* Disable additional movement */
+}
 
 .parallax {
   background-image: url("emp2.jpg");
   min-height: 100vh;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero {
   font-family: "abril fatface", cursive;
 }
+
 .hero__h1 {
   position: absolute;
   font-weight: 100;
-  top: 40%;
+  top: 30%;
   left: 5%;
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 5px 5px 10px black;
   font-size: 12rem;
   text-align: center;
 }
+
 .hero__h2a {
-  font-weight: 100;
   position: absolute;
+  font-weight: 100;
   font-style: italic;
-  top: 63%;
-  left: 5%;
+  top: 60%;
+  left: 6%;
   color: rgb(255, 255, 255);
   line-height: 1.3;
-  text-shadow: 5px 5px 10px black;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
   font-size: 4rem;
   text-align: center;
 }
+
+.hero__h2b {
+  position: absolute;
+  font-weight: lighter;
+  top: 67%;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  line-height: 1.3;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
+  font-size: 5rem;
+  text-align: center;
+}
+
+.container {
+  background-color: #161613;
+  color: white;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1.5em;
+  border: 5px solid #000000;
+  border-style: ridge;
+  box-shadow: 0 2px 2px 0 rgba(255, 2, 2, 0.2),
+              0 6px 20px 0 rgba(253, 68, 68, 0.19);
+}
+
+.menu-heading {
+  color: red;
+  font-family: "bungee tint", cursive;
+  margin: 0;
+  padding-bottom: 2em;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
 .menu {
-  background-color: #020202;
-  height: 100vh;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  color: red;
+  font-family: "bungee tint", cursive;
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ff0000;
+  font-size: 1.8rem;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-img {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  letter-spacing: 0.1em;
+  margin-right: 1.5em;
+  font-size: 1.2rem;
+  font-family: "bungee tint", cursive;
+}
+
+.menu-item-desc {
+  line-height: 1.6;
+}
+
+.about-heading {
+  text-align: center;
+  line-height: 1.6;
+  font-family: "abril fatface", cursive;
+  font-weight: 100;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
+  font-size: 8rem;
+  color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 2.5rem;
+  }
+
+  .hero__h1 {
+    font-size: 9rem;
+  }
+
+  .hero__h2a {
+    font-size: 3rem;
+  }
+
+  .hero__h2b {
+    font-size: 4rem;
+  }
+
+  .about-heading {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 2rem;
+  }
+
+  .hero__h1 {
+    font-size: 7rem;
+  }
+
+  .hero__h2a {
+    font-size: 2.5rem;
+  }
+
+  .hero__h2b {
+    font-size: 3rem;
+  }
+
+  .about-heading {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1.5rem;
+  }
+
+  .hero__h1 {
+    font-size: 5rem;
+  }
+
+  .hero__h2a {
+    font-size: 2rem;
+  }
+
+  .hero__h2b {
+    font-size: 2.5rem;
+  }
+
+  .about-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .hero__h1 {
+    font-size: 3rem;
+  }
+
+  .hero__h2a {
+    font-size: 1.5rem;
+  }
+
+  .hero__h2b {
+    font-size: 2rem;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+  }
 }
