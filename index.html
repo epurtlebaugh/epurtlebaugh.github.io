@@ -16,27 +16,213 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
-      <ul class="navbar">
-        <li><a href="#boxes">MENU</a></li>
-        <li><a href="#history">ABOUT</a></li>
-      </ul>
-      <p class="logo">Tito's Empanadas</p>
-      <ul class="navbar">
-        <li><a href="#Health">CONTACT</a></li>
-        <li><a href="#Recipes">HOURS</a></li>
-      </ul>
+      <div class="navbar-container">
+        <ul class="navbar">
+          <li><a href="#boxes">MENU</a></li>
+          <li><a href="#history">ABOUT</a></li>
+        </ul>
+        <p class="logo">Tito's Empanadas</p>
+        <ul class="navbar">
+          <li><a href="#Health">CONTACT</a></li>
+          <li><a href="#Recipes">HOURS</a></li>
+        </ul>
+      </div>
     </header>
     <section class="hero">
       <div class="parallax"></div>
       <h1 class="hero__h1">Empanadas!</h1>
-      <h2 class="hero__h2a">Just admit it...<br />You want one</h2>
+      <h2 class="hero__h2a">Just admit it...</h2>
+      <h2 class="hero__h2b">You want one</h2>
+      <i
+        class="fa-duotone fa-solid fa-angles-down fa-beat fa-2xl"
+        style="--fa-primary-color: #ff0000; --fa-secondary-color: #00b3ff"
+      ></i>
     </section>
-    <section class="menu">
-      <div class="menu__1"></div>
+    <main class="container">
+      <h1 class="menu-heading">MENU</h1>
+      <div class="menu">
+        <h2 class="menu-group-heading">Salsas</h2>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/000/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Salsa Criolla</span>
+                <span class="menu-item-price">$3.99</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/ccc/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Salsa Tomate Picante</span>
+                <span class="menu-item-price">$2.99</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/000/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Chimmichurri</span>
+                <span class="menu-item-price">$2.99</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <h2 class="menu-group-heading">Empanadas</h2>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/ccc/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Carne</span>
+                <span class="menu-item-price">$12.90</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/000/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Jamon y Queso</span>
+                <span class="menu-item-price">$12.90</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/ccc/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Pollo</span>
+                <span class="menu-item-price">$12.90</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/ccc/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Caprese</span>
+                <span class="menu-item-price">$12.90</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/ccc/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Verdura</span>
+                <span class="menu-item-price">$12.90</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              src="https://dummyimage.com/600x400/ccc/fff"
+              alt="Black Placeholder Image"
+              class="menu-item-img"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Pollo</span>
+                <span class="menu-item-price">$12.90</span>
+              </h3>
+              <p class="menu-item-desc">
+                Nunc efficitur felis vel mi efficitur, sed molestie sem
+                scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+                tincidunt nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="about">
+      <div class="parallax"> <h2 class="about-heading">Our Story</h2></div>
     </section>
   </body>
 </html>
