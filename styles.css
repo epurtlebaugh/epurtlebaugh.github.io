@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -20,7 +21,7 @@ body {
   height: 9vh;
   background-color: #24241f;
   box-shadow: 0 4px 8px 0 rgba(251, 251, 251, 0.2),
-              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -155,16 +156,23 @@ body {
 i {
   position: absolute;
   bottom: 6%;
-  left: 50%; /* Center horizontally */
+  left: 48%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust to center */
   font-size: 5rem !important;
   color: rgb(0, 0, 0);
-  animation: none; /* Disable additional movement */
 }
 
 .parallax {
   background-image: url("emp2.jpg");
   min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax__story {
+  background-image: url("caba.jpg");
+  min-height: 150vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,18 +225,18 @@ i {
   max-width: 1200px;
   margin: 4rem auto;
   padding: 1.5em;
-  border: 5px solid #000000;
+  border: 10px solid #000000;
   border-style: ridge;
   box-shadow: 0 2px 2px 0 rgba(255, 2, 2, 0.2),
-              0 6px 20px 0 rgba(253, 68, 68, 0.19);
+    0 6px 20px 0 rgba(253, 68, 68, 0.19);
 }
 
 .menu-heading {
   color: red;
   font-family: "bungee tint", cursive;
   margin: 0;
-  padding-bottom: 2em;
-  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -284,9 +292,27 @@ i {
 
 .menu-item-desc {
   line-height: 1.6;
+  font-family: 'space mono', monospace;
+}
+.menu-item-price {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.empanada-icon{
+  width: 80px;
+  height: 80px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+  transform: translate(430%, -50%); /* Adjust for perfect centering */
+}
+.empanada-icon1{
+  width: 80px;
+  height: 80px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
+  transform: translate(655%, -20%); /* Adjust for perfect centering */
 }
 
 .about-heading {
+  padding-top: 4rem;
   text-align: center;
   line-height: 1.6;
   font-family: "abril fatface", cursive;
@@ -295,6 +321,92 @@ i {
   font-size: 8rem;
   color: white;
 }
+.story-par{
+  font-size:1.5rem;
+}
+.story__about {
+  line-height: 1.3;
+  text-indent: 3rem;
+  font-family: 'space mono', monospace;
+  font-size: 1.6rem;
+  text-align: justify;
+  word-spacing: -0.3rem;
+  color: rgb(255, 255, 255);
+  background-color: #000000e3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 10px solid #000000;
+  border-style: ridge;
+  box-shadow: 0 2px 2px 0 rgba(255, 2, 2, 0.2),
+    0 6px 20px 0 rgba(253, 68, 68, 0.19);
+  padding: 6rem;
+  margin: 40rem;
+  margin-top: 4rem;
+  
+}
+.signature {
+  text-align: right;
+}
+.name{
+
+  text-align: right;
+  font-size: 6rem;
+  font-weight: 100;
+  font-style: italic;
+  font-family: 'cookie', cursive;
+  display: inline-block;
+  overflow: hidden; /* Ensures text is clipped */
+  white-space: nowrap; /* Prevents line breaks */
+  border-right: 2px solid black; /* Cursor style */
+  animation: typing 3s steps(30) infinite, blink-caret 0.75s step-end infinite; /* Typing and blinking effects */
+  width: fit-content; /* Adjust width to fit the text */
+  margin-left: 22rem;
+  color:#ff0000
+}
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Even spacing between photos */
+  margin: 1px 30px; /* Add space on top, left, and right */
+  margin-top: -33rem;
+}
+
+.photo {
+  width: calc(25% - 10px); /* Adjust width to reduce space between photos */
+  margin: 5px; /* Reduced space around each photo */
+  object-fit: cover; /* Ensures the images retain their aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.photo:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  z-index: 1; /* Bring hovered photo to front */
+}
+
+
+
+
+@keyframes typing {
+  0% {
+    clip-path: inset(0 100% 0 0); /* Start with text hidden */
+  }
+  50% {
+    clip-path: inset(0 0 0 0); /* Show the text fully */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Keep the text visible */
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent; /* Hide cursor */
+  }
+}
+
+
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 1200px) {
