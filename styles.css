@@ -369,7 +369,6 @@ i {
   flex-wrap: wrap;
   justify-content: space-between; /* Even spacing between photos */
   margin: 1px 30px; /* Add space on top, left, and right */
-  margin-top: -33rem;
 }
 
 .photo {
