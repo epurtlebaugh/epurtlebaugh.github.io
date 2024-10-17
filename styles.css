@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 600rem;
+  height: 100%;
   background-color: #24241f;
 }
 
@@ -25,6 +25,30 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and social media icons */
+  padding: 4rem;
+  height: 10vh;
+  background-color: #00000033;
+  box-shadow: 0 4px 8px 0 rgba(251, 251, 251, 0.2),
+    0 6px 20px 0 rgba(255, 0, 0, 0.663);
+  bottom: 0;
+  color:#fefefe;
+  font-family:'monospace';
+ }
+.footer__text{
+  font-size:1rem;
+}
+.opening-hours__text{
+  font-size:1.2rem;
+  font-weight:300;
+  font-style:italic;
+  font-family:'Montserrat', sans-serif;
+  line-height:1.5;
+
 }
 
 .navbar-container {
@@ -43,28 +67,35 @@ body {
 
 .navbar li {
   list-style: none;
-  margin: 0 5rem; /* Adjust for spacing */
+  margin-top: 1.7rem; /* Adjust for spacing */
+  margin-left: 4rem; /* Adjust for spacing */
+  margin-right: 0.8rem; /* Adjust for spacing */
 }
 
 .navbar a {
   color: rgb(251, 251, 251);
   text-decoration: none;
-  font-size: 2rem; /* Base font size */
+  font-size: 2.2rem; /* Base font size */
   font-weight: 500;
   font-family: "Abril Fatface", cursive;
   transition: font-size 0.3s; /* Smooth transition */
 }
 
 /* Responsive font sizes for navbar items */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1360px) {
   .navbar a {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar a {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .navbar a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -120,6 +151,7 @@ body {
   font-family: "Bungee Tint", cursive;
   text-align: center;
   margin: 0 10px;
+  margin-left: 5rem;
 }
 
 /* Responsive logo size */
@@ -156,7 +188,7 @@ body {
 i {
   position: absolute;
   bottom: 6%;
-  left: 48%; /* Center horizontally */
+  left: 49%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust to center */
   font-size: 5rem !important;
   color: rgb(0, 0, 0);
@@ -220,7 +252,7 @@ i {
 }
 
 .container {
-  background-color: #161613;
+  background-image: url("paper.jpg");
   color: white;
   max-width: 1200px;
   margin: 4rem auto;
@@ -266,11 +298,16 @@ i {
 }
 
 .menu-item-img {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   flex-shrink: 0;
   object-fit: cover;
   margin-right: 1.5em;
+  border: 1px solid #ff0000fa;
+}
+.menu-item-img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  z-index: 1; /* Bring hovered photo to front */
 }
 
 .menu-item-text {
@@ -291,20 +328,22 @@ i {
 }
 
 .menu-item-desc {
+  padding-top: 0.5rem;
   line-height: 1.6;
-  font-family: 'space mono', monospace;
+  font-family: "space mono", monospace;
 }
 .menu-item-price {
   font-weight: 600;
   font-size: 1.2rem;
 }
-.empanada-icon{
+.empanada-icon {
+  display: block; /* Ensure it's block-level for centering */
+  margin: 0 auto; /* Center horizontally */
   width: 80px;
   height: 80px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
-  transform: translate(430%, -50%); /* Adjust for perfect centering */
 }
-.empanada-icon1{
+.empanada-icon1 {
   width: 80px;
   height: 80px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
@@ -321,40 +360,34 @@ i {
   font-size: 8rem;
   color: white;
 }
-.story-par{
-  font-size:1.5rem;
+.story-par {
+  font-size: 1.5rem;
 }
 .story__about {
-  line-height: 1.3;
-  text-indent: 3rem;
-  font-family: 'space mono', monospace;
-  font-size: 1.6rem;
+  line-height: 1.5;
+  text-indent: 2rem; /* Adjusted for better readability */
+  font-family: "space mono", monospace;
+  font-size: 1.8rem; /* Increased size for better readability */
   text-align: justify;
-  word-spacing: -0.3rem;
   color: rgb(255, 255, 255);
-  background-color: #000000e3;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
   border: 10px solid #000000;
   border-style: ridge;
   box-shadow: 0 2px 2px 0 rgba(255, 2, 2, 0.2),
-    0 6px 20px 0 rgba(253, 68, 68, 0.19);
-  padding: 6rem;
-  margin: 40rem;
-  margin-top: 4rem;
-  
+              0 6px 20px 0 rgba(253, 68, 68, 0.19);
+  padding: 4rem; /* Adjusted padding */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 4rem auto; /* Centering */
 }
 .signature {
   text-align: right;
 }
-.name{
-
+.name {
   text-align: right;
   font-size: 6rem;
   font-weight: 100;
   font-style: italic;
-  font-family: 'cookie', cursive;
+  font-family: "cookie", cursive;
   display: inline-block;
   overflow: hidden; /* Ensures text is clipped */
   white-space: nowrap; /* Prevents line breaks */
@@ -362,7 +395,7 @@ i {
   animation: typing 3s steps(30) infinite, blink-caret 0.75s step-end infinite; /* Typing and blinking effects */
   width: fit-content; /* Adjust width to fit the text */
   margin-left: 22rem;
-  color:#ff0000
+  color: #ff0000;
 }
 .photo-container {
   display: flex;
@@ -384,9 +417,6 @@ i {
   z-index: 1; /* Bring hovered photo to front */
 }
 
-
-
-
 @keyframes typing {
   0% {
     clip-path: inset(0 100% 0 0); /* Start with text hidden */
@@ -404,8 +434,6 @@ i {
     border-color: transparent; /* Hide cursor */
   }
 }
-
-
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 1200px) {
@@ -450,6 +478,26 @@ i {
   .about-heading {
     font-size: 5rem;
   }
+  .signature {
+    font-size: 1.2em; /* Adjust as needed */
+    position: relative; /* Keep it in frame */
+    margin-top: 20px; /* Space above */
+}
+
+.signature.name {
+    font-size: 1em; /* Adjust size for the name */
+}
+
+/* Adjust margins for the photo wall */
+.photo-wall {
+    margin-top: 20px; /* Reduce margin to pull it closer */
+    padding: 20px 0; /* Add padding if needed */
+}
+
+/* Additional adjustments for the about section */
+.about {
+    padding-bottom: 0; /* Reduce space below about section */
+}
 }
 
 @media screen and (max-width: 768px) {
