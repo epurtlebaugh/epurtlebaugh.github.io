@@ -30,24 +30,25 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between; /* Space between logo and social media icons */
-  padding: 4rem;
-  height: 10vh;
+  flex-wrap: wrap;
+  margin-top: auto; 
   background-color: #00000033;
-  box-shadow: 0 4px 8px 0 rgba(251, 251, 251, 0.2),
-    0 6px 20px 0 rgba(255, 0, 0, 0.663);
   bottom: 0;
   color:#fefefe;
-  font-family:'monospace';
+  font-family: "space mono", monospace;
+
  }
 .footer__text{
   font-size:1rem;
+  margin: 1rem;
 }
 .opening-hours__text{
+  color:#ff0000;
   font-size:1.2rem;
-  font-weight:300;
-  font-style:italic;
-  font-family:'Montserrat', sans-serif;
-  line-height:1.5;
+  font-weight:400;
+  font-family: "space mono", monospace;
+  line-height:1.2;
+  margin: 1rem;
 
 }
 
@@ -84,7 +85,7 @@ footer{
 /* Responsive font sizes for navbar items */
 @media screen and (max-width: 1360px) {
   .navbar a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -95,13 +96,13 @@ footer{
 
 @media screen and (max-width: 992px) {
   .navbar a {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .navbar a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -155,15 +156,21 @@ footer{
 }
 
 /* Responsive logo size */
+@media screen and (max-width: 1200px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .logo {
-    font-size: 1.8rem; /* Scale down */
+    font-size: 1rem; /* Scale down */
   }
 }
 
 @media screen and (max-width: 670px) {
   .logo {
     font-size: 1.5rem; /* Further scale down */
+    margin-left: 1rem;
   }
 }
 
@@ -344,10 +351,12 @@ i {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
 }
 .empanada-icon1 {
+  display: block; /* Ensure it's block-level for centering */
+  margin: 0 auto; /* Center horizontally */
   width: 80px;
   height: 80px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg);
-  transform: translate(655%, -20%); /* Adjust for perfect centering */
+  transform: translate(20%, -20%); /* Adjust for perfect centering */
 }
 
 .about-heading {
@@ -415,6 +424,63 @@ i {
 .photo:hover {
   transform: scale(1.1); /* Scale up on hover */
   z-index: 1; /* Bring hovered photo to front */
+}
+.contact {
+  background-image: url('call.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 10px solid #000000; /* Border similar to about section */
+  border-style: ridge;
+  box-shadow: 0 2px 2px 0 rgba(255, 2, 2, 0.2),
+              0 6px 20px 0 rgba(253, 68, 68, 0.19);
+  padding: 4rem; /* Add padding for spacing */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 4rem auto; /* Centering */
+  color: white; /* Text color */
+}
+
+.contact-heading {
+  text-align: center;
+  font-family: "abril fatface", cursive;
+  font-weight: 100;
+  font-size: 5rem;
+  color: rgb(1, 1, 1); /* Heading color */
+  margin-bottom: 2rem; /* Space below heading */
+}
+
+
+
+.contact-info {
+  padding: 1rem; /* Add some padding */
+  background-color: rgba(0, 0, 0, 0.8); /* Match the about section */
+  border: 10px solid #000; /* Border similar to the about section */
+  border-radius: 8px; /* Slight rounding for aesthetics */
+  max-width: 90%; /* Limit the width to avoid stretching */
+  margin: 0 auto; /* Center the box */
+  display: flex; /* Enable flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Left-align the text */
+  justify-content: center; /* Center vertically */
+  height: 100%; /* Ensure it takes full height */
+}
+
+.contact-item {
+  font-size: 0.8rem; /* Smaller font size for responsiveness */
+  width: auto; /* Adjust width to content */
+  margin: 0.5rem 0; /* Vertical spacing between items */
+}
+
+.contact-label {
+  font-weight: bold; /* Bold for labels */
+  margin-right: 0.5rem; /* Less space between label and value */
+  font-size: 1rem;
+}
+
+.contact-value {
+  color: #fc0000; /* Light color for values */
+  font-size: 1.2rem;
 }
 
 @keyframes typing {
@@ -520,6 +586,38 @@ i {
   .about-heading {
     font-size: 4rem;
   }
+  .footer__text {
+    font-size: 0.9rem; /* Smaller size */
+  }
+}
+@media screen and (max-width: 670px) {
+  .logo{
+    margin-left:5rem;
+    font-size: 1rem;
+
+  }
+  .navbar a{
+    visibility: hidden;
+  }
+  .story__about{
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove all padding */
+    width: 100%; /* Ensure it takes full width */
+  }
+  .story-par{
+    font-size: 1.2rem;
+    padding: 1rem; /* Remove all padding */
+    width: 100%; /* Ensure it takes full width */
+  }
+  .name{
+    bottom: 0;
+  }
+  footer{
+    display: block !important;
+  }
+  .footer__text{
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -541,5 +639,43 @@ i {
 
   .about-heading {
     font-size: 2.5rem;
+  }
+  .name{
+    margin-left:10rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu-item-name {
+    font-size: .9rem;
+  }
+  .menu-item-price {
+    font-size: .9rem;
+  }
+  .name{
+    margin-left:5rem;
+  }
+
+}
+@media screen and (max-width: 400px){
+  .menu-item-name {
+    font-size: .5rem;
+  }
+  .menu-item-price {
+    font-size: .7rem;
+    margin-left: -3rem;
+  }
+  .menu-item-desc{
+    font-size: .5rem;
+  }
+  .contact-heading{
+    font-size: 1.5rem;
+  }
+  .contact-info {
+    padding: 0.5rem; /* Less padding */
+    max-width: 95%; /* Adjust width for small screens */
+  }
+
+  .contact-item {
+    font-size: 0.7rem; /* Further reduce font size */
   }
 }
