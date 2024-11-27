@@ -2,51 +2,192 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARKA Plumbing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arek's Lawncare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    /><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap" rel="stylesheet">
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="discount">
+      <h1 class="discount__text">Want a 35% discount?  Call and find out how! (1-800-999-AREK)  </h1>
+    </nav>
     <nav>
-      <h1 class="logo">ARKA Plumbing</h1>
-      <ul>
-        <li><a href="index.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <h1 class="logo">ALS///</h1>
+      <ul >
+        <li ><a href="#about" class="nav__links">About Us</a></li>
+        <li ><a href="#services" class="nav__links">Services</a></li>
+        <li ><a href="#contact" class="nav__links">Contact Us</a></li>
       </ul>
     </nav>
     <section class="hero">
-      <img src="hero1.jpeg" alt="Plumbing" class="hero__img" />
-      <h1 class="hero__logo">ARKA Plumbing</h1>
-      <p class="hero__text">We provide high-quality plumbing services.</p>
-      <p class="hero__text2">Get it done right, every time!</p>
+      <div class="hero__img"></div>
+      <h1 class="hero__logo">Arek's Lawn Services</h1>
+      <p class="hero__text">Over 50 years of lawn and garden success</p>
+      <p class="hero__text2">We get it done right, everytime...</p>
       <div class="writing-effect">
         <span>Guaranteed!</span>
       </div>
+      <div class="wrap">
+        <button class="button">Contact Us</button>
+      </div>
     </section>
-    <section class="services" style="min-height: 300px">
+
+    <section class="about" id="about">
+      <h1 class="about__title">About Us</h1>
+      <img src="lawn2.jpeg" alt="" class="about__img" />
+
+      <p class="about__text">
+        At Arek's Lawncare Services (ALS), we take pride in transforming your outdoor spaces
+        into beautiful, healthy landscapes. Founded by Arek, a passionate
+        horticulturist with over 10 years of experience, our mission is to
+        provide reliable, professional lawn care that exceeds your expectations.
+        Whether it’s routine mowing, seasonal cleanups, or custom landscaping
+        projects, we’re committed to delivering high-quality, personalized
+        service that leaves your lawn looking its best all year round. We
+        believe that a well-maintained lawn enhances the beauty of your home,
+        and we’re here to make that vision a reality with care and attention to
+        detail.
+      </p>
+      <div class="wrap">
+        <button class="about__button learn__button">Learn More</button>
+      </div>
+    </section>
+
+    <section class="services" id="services">
       <!-- Add a minimum height -->
-      <h2>Our Services</h2>
-      <p>Details about services offered...</p>
+      <h1 class="services__title">Our Services</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <i class="fa-solid fa-scissors" style="color: rgb(14, 108, 9)"></i>
+            <h2 class="card__title">Grass Cutting</h2>
+            <p class="card__text">
+              We provide the highest quality grass cutting services. We also
+              provide maintenance services for your grass anywhere in the United
+              States.
+            </p>
+            <button class="about__button service__button">Learn More</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <i
+              class="fa-solid fa-plant-wilt"
+              style="color: rgb(14, 108, 9)"
+            ></i>
+            <h2 class="card__title">Lawn Fertilizer</h2>
+            <p class="card__text">
+              We provide services for fertilization and weed control. We
+              also provide maintenance services for your lawn anywhere in the
+              United States.
+            </p>
+            <button class="about__button service__button"">Learn More</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <i class="fa-solid fa-seedling" style="color: rgb(14, 108, 9)"></i>
+            <h2 class="card__title">Bush Trimming</h2>
+            <p class="card__text">
+              We provide services for planting, trimming, and maintenance. We
+              also provide trimming services for your plants anywhere in the
+              United States.
+            </p>
+            <button class="about__button service__button"">Learn More</button>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="about" style="min-height: 300px">
-      <h2>About Us</h2>
-      <p>Information about the company...</p>
+    <section class="useful__info">
+      <div class="info">
+        <h1>10,000+</h1>
+        <p>Lawns Mowed</p>
+      </div>
+      <div class="info">
+        <h1>50+</h1>
+        <p>Hard Workers</p>
+      </div>
+      <div class="info">
+        <h1>100+</h1>
+        <p>Years of Experience</p>
+      </div>
     </section>
-    <section class="contact" style="min-height: 300px">
-      <h2>Contact Us</h2>
-      <p>Contact information...</p>
+    <section class="contact" id="contact">
+      <div class="contact__img"></div>
+      <div class="contact__form">
+        <h2 class="contact__header">Contact Us Today</h2>
+        <h1 class="contact__title">Please let us know your contact info, your prefered date, and your requested services</h1>
+
+        <!-- Add a form for contact information -->
+
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="text" placeholder="Address" required />
+          <label for="date" class="label">Date you want service on:</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            required
+            min="<?php echo date('Y-m-d'); ?>"
+            max="<?php echo date('Y-m-d', strtotime('+5 years')); ?>"
+          />
+          >
+          <textarea
+            placeholder="Details of your issue or requested work"
+            required
+          ></textarea>
+          <button class="about__button contact__button">Submit</button>
+        </form>
+      </div>
     </section>
-    <footer>
-      <p>&copy; 2020 ARKA Plumbing. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2024 Arek's Lawncare. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+          <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="address">Address: 123 Grass St, City, Country</p>
+          <p style="font-weight: bold" class="call__us">
+            CALL US: <a href="tel:123-456-7890" class="phone__number">(123) 456-7890</a>
+          </p>
+          <p class="hours">Hours: Monday - Friday 9am - 5pm</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- New Footer (visible only on screens smaller than 600px) -->
+    <footer class="footer-phone">
+      <div class="footer-phone-content">
+        <p class="question">Questions? Quote? Call Now</p>
+        <p class="phone"><strong>1(800) 456-7890 </strong></p>
+      </div>
     </footer>
   </body>
 </html>
