@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arek's Lawncare</title>
+    <title>KAHIAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,58 +16,136 @@
       href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="discount">
-      <h1 class="discount__text">Want a 35% discount?  Call and find out how! (1-800-999-AREK)  </h1>
-    </nav>
-    <nav>
-      <h1 class="logo">ALS///</h1>
-      <ul >
-        <li ><a href="#about" class="nav__links">About Us</a></li>
-        <li ><a href="#services" class="nav__links">Services</a></li>
-        <li ><a href="#contact" class="nav__links">Contact Us</a></li>
+ <div class="top-navbar">
+        <div class="social-icons-top">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i><span>Call Us: (123) 456-7890</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i><span>123 Your St, City, Country</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i><span>Mon-Fri: 7:00AM - 5:00PM</span>
+            </div>
+        </div>
+        <div class="appointment-btn">
+            <button>MAKE APPOINTMENT</button>
+        </div>
+    </div>
+    <div class="nav__total">
+    <nav class ="navbar">
+      <i class="fa-duotone fa-solid fa-fingerprint logo_nav" style="--fa-primary-color: #2e96db; --fa-secondary-color: #e5ff00;"></i>
+      <span class="logo">KAHIAS</span>
+      </nav>
+      <nav class="nav-links-container">
+      <ul class="nav-links">
+        <li ><a href="#about" class="nav__links">ABOUT US</a></li>
+        <li ><a href="#services" class="nav__links">SERVICES</a></li>
+        <li ><a href="#contact" class="nav__links">CONTACT</a></li>
       </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
     <section class="hero">
       <div class="hero__img"></div>
-      <h1 class="hero__logo">Arek's Lawn Services</h1>
-      <p class="hero__text">Over 50 years of lawn and garden success</p>
-      <p class="hero__text2">We get it done right, everytime...</p>
+      <div class="hero__title">
+        <h1 class="hero__logo">GOT A MESS THAT NEEDS <span class="cleaner">CLEANED?</span></h1>
+      </div>
+      
+      <div class="hero__paragraph">
+        <p class="hero__text">KAHIAS offers eco friendly, professional cleaning services that will fit your business or home needs. Call us today and add some SHINE to your facility or home!</p>
+      </div>
+      
       <div class="writing-effect">
-        <span>Guaranteed!</span>
+        <span>WE ARE HERE TO HELP!</span>
       </div>
       <div class="wrap">
-        <button class="button">Contact Us</button>
+        <button class="button__call">CALL US NOW</button>
+      </div>
+    </section>
+    <section class="contact__middle">
+      <div class="contact__middle__call">
+        <i class="fa-solid fa-headset"></i>
+        <h3 class="contact__middle_title">Have a question? Call us today!</h3>
+        <h4 class="contact__middle_end">(123) 456-7890</h4>
+      </div>
+      <div class="contact__middle__times">
+        <i class="fa-solid fa-clock"></i>
+        <h3 class="contact__middle_title">We are Open Monday to Friday</h3>
+        <h4 class="contact__middle_end">7:00AM - 5:00PM</h4>
+      </div>
+      <div class="contact__middle__email">
+        <i class="fa-solid fa-envelope"></i>
+        <h3 class="contact__middle_title">Need Help? Shoot us an email</h3>
+        <h4 class="contact__middle_end">kahias@example.com</h4>
       </div>
     </section>
 
     <section class="about" id="about">
-      <h1 class="about__title">About Us</h1>
-      <img src="lawn2.jpeg" alt="" class="about__img" />
+      <div class="welcome">
+        <h3>Welcome</h3>
+        <h2>We are the Eco-Friendly, family run cleaners in town!</h2>
+      </div>
+      <div class="our__services">
+        <div class="floor">
+          <img src="floor.jpg" alt="" class="services__img">
+          <h2>Floor Cleaning</h2>
+          <p>We provide floor cleaning services.</p>
+          <i class="fa-solid fa-broom"></i>
+        </div>
+        <div class="window">
+          <img src="window.jpg" alt="" class="services__img">
+          <h2>Window Cleaning</h2>
+          <p>We provide window cleaning services.</p>
+          <i class="fa-regular fa-window-maximize"></i>
+        </div>
+        <div class="laundry">
+          <img src="laundry.jpg" alt="" class="services__img">
+          <h2>Laundry</h2>
+          <p>We provide laundry services.</p>
+          <i class="fa-solid fa-soap"></i>
+        </div>
+        <div class="ironing">
+          <img src="iron.jpg" alt="" class="services__img">
+          <h2>Ironing</h2>
+          <p>We provide ironing services.</p>
+          <i class="fa-solid fa-shirt"></i>
+        </div>
+        <div class="trash">
+          <img src="trash.jpg" alt="" class="services__img">
+          <h2>Trash Removal</h2>
+          <p>We provide trash removal services.</p>
+          <i class="fa-solid fa-trash-can"></i>
+        </div>
+        <div class="carpets">
+          <img src="carpet.jpg" alt="" class="services__img">
+          <h2>Carpets</h2>
+          <p>We provide carpet cleaning services.</p>
+          <i class="fa-solid fa-spray-can-sparkles"></i>
+        </div>
 
-      <p class="about__text">
-        At Arek's Lawncare Services (ALS), we take pride in transforming your outdoor spaces
-        into beautiful, healthy landscapes. Founded by Arek, a passionate
-        horticulturist with over 10 years of experience, our mission is to
-        provide reliable, professional lawn care that exceeds your expectations.
-        Whether it’s routine mowing, seasonal cleanups, or custom landscaping
-        projects, we’re committed to delivering high-quality, personalized
-        service that leaves your lawn looking its best all year round. We
-        believe that a well-maintained lawn enhances the beauty of your home,
-        and we’re here to make that vision a reality with care and attention to
-        detail.
-      </p>
-      <div class="wrap">
-        <button class="about__button learn__button">Learn More</button>
       </div>
     </section>
 
@@ -189,5 +267,15 @@
         <p class="phone"><strong>1(800) 456-7890 </strong></p>
       </div>
     </footer>
+    <script>
+      // Toggle the dropdown menu on hamburger click
+      const hamburger = document.getElementById('hamburger');
+      const dropdownMenu = document.getElementById('dropdown-menu');
+    
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        dropdownMenu.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
