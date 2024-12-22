@@ -17,7 +17,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!--Linking swiperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -40,7 +41,7 @@
             </div>
         </div>
         <div class="appointment-btn">
-            <button>MAKE APPOINTMENT</button>
+            <button>MAKE AN APPOINTMENT</button>
         </div>
     </div>
     <div class="nav__total">
@@ -105,177 +106,343 @@
 
     <section class="about" id="about">
       <div class="welcome">
-        <h3>Welcome</h3>
+        <h3>Our Services</h3>
         <h2>We are the Eco-Friendly, family run cleaners in town!</h2>
       </div>
       <div class="our__services">
         <div class="floor">
-          <img src="floor.jpg" alt="" class="services__img">
-          <h2>Floor Cleaning</h2>
-          <p>We provide floor cleaning services.</p>
-          <i class="fa-solid fa-broom"></i>
+          <img src="floor.jpg" alt="" class="services__img" height="3901" width="5500">
+          <h2 class="services__title">Floor Cleaning</h2>
+          <p class ="services__description">We provide floor cleaning services.</p>
+          <i class="fa-solid fa-broom services__icon"></i>
         </div>
         <div class="window">
-          <img src="window.jpg" alt="" class="services__img">
-          <h2>Window Cleaning</h2>
-          <p>We provide window cleaning services.</p>
-          <i class="fa-regular fa-window-maximize"></i>
+          <img src="window.jpg" alt="" class="services__img"height="3431px" width="5147px">
+          <h2 class="services__title">Window Cleaning</h2>
+          <p class ="services__description">We provide window cleaning services.</p>
+          <i class="fa-regular fa-window-maximize services__icon"></i>
         </div>
         <div class="laundry">
-          <img src="laundry.jpg" alt="" class="services__img">
-          <h2>Laundry</h2>
-          <p>We provide laundry services.</p>
-          <i class="fa-solid fa-soap"></i>
+          <img src="laundry.jpg" alt="" class="services__img"height="4480px" width="6720px">
+          <h2 class="services__title">Laundry</h2>
+          <p class ="services__description">We provide laundry services.</p>
+          <i class="fa-solid fa-soap services__icon"></i>
         </div>
         <div class="ironing">
-          <img src="iron.jpg" alt="" class="services__img">
-          <h2>Ironing</h2>
-          <p>We provide ironing services.</p>
-          <i class="fa-solid fa-shirt"></i>
+          <img src="iron.jpg" alt="" class="services__img"height="4480px" width="6720px">
+          <h2 class="services__title">Ironing</h2>
+          <p class ="services__description">We provide ironing services.</p>
+          <i class="fa-solid fa-shirt services__icon"></i>
         </div>
         <div class="trash">
-          <img src="trash.jpg" alt="" class="services__img">
-          <h2>Trash Removal</h2>
-          <p>We provide trash removal services.</p>
-          <i class="fa-solid fa-trash-can"></i>
+          <img src="trash.jpg" alt="" class="services__img"height="3915px" width="5872px">
+          <h2 class="services__title">Trash Removal</h2>
+          <p class ="services__description">We provide trash removal services.</p>
+          <i class="fa-solid fa-trash-can services__icon"></i>
         </div>
         <div class="carpets">
-          <img src="carpet.jpg" alt="" class="services__img">
-          <h2>Carpets</h2>
-          <p>We provide carpet cleaning services.</p>
-          <i class="fa-solid fa-spray-can-sparkles"></i>
+          <img src="carpet.jpg" alt="" class="services__img" height="3648px" width="5472px">
+          <h2 class="services__title">Carpets</h2>
+          <p class ="services__description">We provide carpet cleaning services.</p>
+          <i class="fa-solid fa-spray-can-sparkles services__icon"></i>
         </div>
 
       </div>
+      <div class="learn__more_button">
+        <a href="#about" class="learn__more">CLICK TO LEARN MORE</a>
+      </div>
+      
     </section>
-
-    <section class="services" id="services">
-      <!-- Add a minimum height -->
-      <h1 class="services__title">Our Services</h1>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <i class="fa-solid fa-scissors" style="color: rgb(14, 108, 9)"></i>
-            <h2 class="card__title">Grass Cutting</h2>
-            <p class="card__text">
-              We provide the highest quality grass cutting services. We also
-              provide maintenance services for your grass anywhere in the United
-              States.
-            </p>
-            <button class="about__button service__button">Learn More</button>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <i
-              class="fa-solid fa-plant-wilt"
-              style="color: rgb(14, 108, 9)"
-            ></i>
-            <h2 class="card__title">Lawn Fertilizer</h2>
-            <p class="card__text">
-              We provide services for fertilization and weed control. We
-              also provide maintenance services for your lawn anywhere in the
-              United States.
-            </p>
-            <button class="about__button service__button"">Learn More</button>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <i class="fa-solid fa-seedling" style="color: rgb(14, 108, 9)"></i>
-            <h2 class="card__title">Bush Trimming</h2>
-            <p class="card__text">
-              We provide services for planting, trimming, and maintenance. We
-              also provide trimming services for your plants anywhere in the
-              United States.
-            </p>
-            <button class="about__button service__button"">Learn More</button>
-          </div>
-        </div>
+    <section class="references__main">
+      <i class="fa-regular fa-clock clock__icon"></i>
+      <div class="references__header">
+       
+       
+        <h1 class="references__title">We Save you time</h3>
+        <h1 class="references__title_2">AND MONEY!</h4>
       </div>
+      <div class="references">
+      <div class="references__items">
+        <h3 class="references__number" data-target="1000">1000+</h3>
+        <h4 class="references__words">Projects Completed</h4>
+      </div>
+      <div class="references__items">
+       
+        <h3 class="references__number" data-target="5">5</h3>
+        <h4 class="references__words">Local Branches</h4>
+      </div>
+      <div class="references__items">
+       
+        <h3 class="references__number" data-target="200">200+</h3>
+        <h4 class="references__words">Happy Customers</h4>
+      </div>
+      <div class="references__items">
+        
+        <h3 class="references__number" data-target="15">15</h3>
+        <h4 class="references__words">Years in the Business</h4>
+      </div>
+    </div>
     </section>
-    <section class="useful__info">
-      <div class="info">
-        <h1>10,000+</h1>
-        <p>Lawns Mowed</p>
+    <section class="benefits">
+      <h2 class="benefit__header">Benefits of Hiring Us</h2>
+      <div class="benefit">
+      <div class="benefit__left">
+        <h2 class="benefit__header_2">What Makes Us Different?</h2>
+        <p class="benefit__explanation">We offer a wide range of services to meet your needs, including floor cleaning, window cleaning, laundry, ironing, trash removal, and carpet cleaning.</p>
+        <div class="benefit__point_container">
+          <div class="benefit__point_main">
+          <div class="benefit__icon">
+            <i class="fa-regular fa-circle-check" style="color: #42a0df;"></i>
+          </div>
+          <div class="benefit__point">
+          
+          <h2 class="benefit__point_header">We are Eco-Friendly</h2>
+          <p class="benefit__point_explanation">We are environmentally friendly and have a green footprint. We use eco-friendly products and materials to clean your floors, windows, carpets, and other surfaces.</p>  
+        </div>
       </div>
-      <div class="info">
-        <h1>50+</h1>
-        <p>Hard Workers</p>
+        <div class="benefit__point_main">
+        <div class="benefit__icon">
+          <i class="fa-regular fa-circle-check" style="color: #42a0df;"></i>
+        </div>
+        <div class="benefit__point">
+          <h2 class="benefit__point_header">We are Professional</h2>
+          <p class="benefit__point_explanation">We are experienced and skilled cleaners who have been working in the industry for over 20 years. We have a reputation for providing exceptional service and customer satisfaction.</p>
+        </div>
       </div>
-      <div class="info">
-        <h1>100+</h1>
-        <p>Years of Experience</p>
+      <div class="benefit__point_main">
+        <div class="benefit__icon">
+          <i class="fa-regular fa-circle-check" style="color: #42a0df;"></i>
+        </div>
+        <div class="benefit__point">
+          <h2 class="benefit__point_header">We are Local</h2>
+          <p class="benefit__point_explanation benefit__point_trigger">We are located in the heart of our community, making it easy for you to reach us when you need our help.</p>
+        </div>
+        </div>  
+        </div>
       </div>
+      <div class="benefit__right">
+        <img src="benefit.jpg" alt="cleaners" loading="lazy" height="3482px" width="5327px">
+      </div>
+    </div>
     </section>
-    <section class="contact" id="contact">
-      <div class="contact__img"></div>
+    <section class="contact_us" id="contact">
+      <div class="contact">
+        <div class="contact__img">
+          <img src="contact.jpg" alt="lady with a phone" loading="lazy" height="3840px" width="5760px">
+        </div>
+        <div class="contact__area">
+        <h1 class="contact__header">HAVE A CLEANING QUESTION OR PROBLEM?</h2>
+        <h2 class="contact__title">Just fill out this form so our experts can reach out to you with a PROMO OFFER!</h1>
       <div class="contact__form">
-        <h2 class="contact__header">Contact Us Today</h2>
-        <h1 class="contact__title">Please let us know your contact info, your prefered date, and your requested services</h1>
+
 
         <!-- Add a form for contact information -->
 
         <form>
-          <input type="text" placeholder="Name" required />
-          <input type="tel" placeholder="Phone Number" required />
-          <input type="text" placeholder="Address" required />
-          <label for="date" class="label">Date you want service on:</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            required
-            min="<?php echo date('Y-m-d'); ?>"
-            max="<?php echo date('Y-m-d', strtotime('+5 years')); ?>"
-          />
-          >
+          <input type="text" placeholder="     Your Name" required  />
+          <i class="fa-solid fa-user aa"></i>
+          <input type="tel" placeholder="     Your Email" required />
+          <i class="fa-solid fa-envelope bb"></i>
+          <input type="text" placeholder="     Subject" required />
+          <i class="fa-solid fa-tag cc"></i>
+          <i class="fa-solid fa-pen dd"></i>
           <textarea
-            placeholder="Details of your issue or requested work"
+            placeholder="    Your message"
             required
           ></textarea>
-          <button class="about__button contact__button">Submit</button>
+          <br>
+          <br>
+          <button class="learn__more learn__submit">Submit</button>
         </form>
       </div>
+    </div>
+  </div>
     </section>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-left">
-          <p>&copy; 2024 Arek's Lawncare. All rights reserved.</p>
-        </div>
-        <div class="footer-center">
-          <div class="social-icons">
-            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="icon"><i class="fab fa-x-twitter"></i></a>
-          </div>
-        </div>
-        <div class="footer-right">
-          <p class="address">Address: 123 Grass St, City, Country</p>
-          <p style="font-weight: bold" class="call__us">
-            CALL US: <a href="tel:123-456-7890" class="phone__number">(123) 456-7890</a>
-          </p>
-          <p class="hours">Hours: Monday - Friday 9am - 5pm</p>
-        </div>
-      </div>
-    </footer>
+    <section class="testimontial__headers">
+      <div class="testimonials__header">
+        <h1 class="testimonials__title">Testimonials</h1>        
+            </div>
+            <div class="testimonials__header_2">
+              <h1 class="testimonials__title_2">What Our Clients Say</h1>
+            </div>
+    </section>
+    <section class="testimonials">
+              <div class="container swiper"> 
+                <div class="slider-wrapper">
+                  <div class="card-list swiper-wrapper">
+                    <div class=" card-item swiper-slide ">
+                      <img src="tm1.jpg" alt="User Image" class="user-image"  height="3412px" width="5120px">
+                      <h2 class="user-name">John Doe</h2>
+                      <p class="user-profession">Office Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm2.jpg" alt="User Image" class="user-image"  height="2000px" width="2000px">
+                      <h2 class="user-name">Jane Doe</h2>
+                      <p class="user-profession">Home Owner</p>
 
-    <!-- New Footer (visible only on screens smaller than 600px) -->
-    <footer class="footer-phone">
-      <div class="footer-phone-content">
-        <p class="question">Questions? Quote? Call Now</p>
-        <p class="phone"><strong>1(800) 456-7890 </strong></p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them"</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm3.jpg" alt="User Image" class="user-image" height="4160px" width="6240px">
+                      <h2 class="user-name">Jack Doe</h2>
+                      <p class="user-profession">Business Owner</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm4.jpg" alt="User Image" class="user-image" height="4480px" width="6720px">
+                      <h2 class="user-name">Jackie Doe</h2>
+                      <p class="user-profession">Home Owner</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm5.jpg" alt="User Image" class="user-image"  height="3840px" width="2160px">
+                      <h2 class="user-name">Justin Doe</h2>
+                      <p class="user-profession">Office Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm6.jpg" alt="User Image" class="user-image"  height="4480px" width="6720px">
+                      <h2 class="user-name">Justine Doe</h2>
+                      <p class="user-profession">Hotel Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm7.jpg" alt="User Image" class="user-image"  height="3024px" width="3024px">
+                      <h2 class="user-name">Jackson Doe</h2>
+                      <p class="user-profession">Home Owner</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm8.jpg" alt="User Image" class="user-image"  height="3840px" width="5760px">
+                      <h2 class="user-name">Johnny Doe</h2>
+                      <p class="user-profession">Office Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide-button swiper-button-prev"></div>
+                  <div class="swiper-slide-button swiper-button-next"></div>
+      
+              </div>
+      </div>
+    </section>
+   <section class="affiliates">
+     <div class="affiliates__content">
+       <div class="affiliates__logos">
+         <img src="logo1.png" class= "affiliates__logo" alt="Affiliate Logo 1" loading="lazy" height="400px" width="400px">
+         <img src="logo2.png" class= "affiliates__logo" alt="Affiliate Logo 2" loading="lazy" height="400px" width="400px">
+         <img src="logo3.png" class= "affiliates__logo" alt="Affiliate Logo 3" loading="lazy" height="400px" width="400px">
+         <img src="logo4.png" class= "affiliates__logo" alt="Affiliate Logo 4" loading="lazy" height="400px" width="400px">
+         <img src="logo5.png" class= "affiliates__logo" alt="Affiliate Logo 5" loading="lazy" height="400px" width="400px">
+         <img src="logo6.png" class= "affiliates__logo" alt="Affiliate Logo 6" loading="lazy" height="400px" width="400px">
+       </div>
+     </div>
+   </section>  
+   <section class="book">
+     <div class="book__header">
+       <h1 class="book__title">Save Time</h1>
+       <p class="book__description">Book your appointment today</p>
+     </div>
+     <div class="book__cards">
+       <div class="book__card card__1">
+        <i class="fa-solid fa-house-laptop"></i>
+        <div class="price"><h3>$</h3><h1>29.99</h1><h2>/month</h2></div>
+        <h2 class="card__title">HOME / OFFICE</h2>
+        <h3 class="card__subtitle">UP TO 20 CLEANINGS /MONTH</h3>
+        <p class="card__text">Our experts will discuss all the details of your cleaning needs and what we can offer</p>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-window-maximize"></i><h2>Window Cleaning</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-shirt"></i><h2>Laundry</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-trash"></i><h2>Trash</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-broom"></i><h2>Floors</h2></div>
+        <div class="make__appt">
+          <button class="make__appt_button">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+        </div>
+       </div>
+       <div class="book__card card__2">
+        <i class="fa-solid fa-building"></i>
+        <div class="price"><h3>$</h3><h1>59.99</h1><h2>/month</h2></div>
+        <h2 class="card__title">COMMERICIAL</h2>
+        <h3 class="card__subtitle">UP TO 20 CLEANINGS /MONTH</h3>
+        <p class="card__text">Our experts will discuss all the details of your cleaning needs and what we can offer</p>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-window-maximize"></i><h2>Window Cleaning</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-shirt"></i><h2>Laundry</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-trash"></i><h2>Trash</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-broom"></i><h2>Floors</h2></div>
+        <div class="make__appt">
+          <button class="make__appt_button">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+        </div>
+       </div>
+       <div class="book__card card__3">
+        <i class="fa-solid fa-credit-card"></i>
+        <div class="price"><h3>$</h3><h1>79.99</h1><h2>/month</h2></div>
+        <h2 class="card__title">INDUSTRIAL</h2>
+        <h3 class="card__subtitle">UP TO 20 CLEANINGS /MONTH</h3>
+        <p class="card__text">Our experts will discuss all the details of your cleaning needs and what we can offer</p>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-window-maximize"></i><h2>Window Cleaning</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-shirt"></i><h2>Laundry</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-trash"></i><h2>Trash</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-broom"></i><h2>Floors</h2></div>
+        <div class="make__appt">
+          <button class="make__appt_button">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+        </div>
+       </div>
+     </div>
+   </section>
+   <section class="google__map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.662212123615!2d-85.987341!3d41.671534999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881c5a6f9c2f6f5f%3A0x94c5b9e5a1b1b80a!2s60196%20Pembrook%20Ln%2C%20Elkhart%2C%20IN%2046517%2C%20USA!5e0!3m2!1sen!2sph!4v1680000000!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="ready">
+    <div class="header"><h1>Ready to book your first cleaning?</h1></div>
+    <div class="ready__button">
+      <button class="ready__button_button">Contact Us</button>
+    </div>
+   </section>
+    <footer class="footer__1">
+      <div class="first__column">
+        <div class="navbar">
+        <i class="fa-duotone fa-solid fa-fingerprint logo_nav"></i>
+        <span class="logo">KAHIAS</span>
+      </div>
+        <h2>We are here to help, don't hesitate to contact us today and book your first consultation</h2>
+        <div class="footer__icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="second__column">
+        <div class="address">
+        <h1>Address</h1>
+        <p>60196 Pembrook Ln, Elkhart, IN 46517, USA</p>
+      </div>
+      <div class="phone">
+        <h1>Phone</h1>
+        <p>1(800) 456-7890</p>
+      </div>
+      <div class="hours">
+        <h1>Hours</h1>
+        <p>Mon-Fri: 7:00AM - 5:00PM</p>
+      </div>
+      </div>
+      <div class="third__column">
+        <h1>Subscribe</h1>
+        <p>Sign up for our newsletter and latest offers</p>
+        <form action="">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </footer>
-    <script>
-      // Toggle the dropdown menu on hamburger click
-      const hamburger = document.getElementById('hamburger');
-      const dropdownMenu = document.getElementById('dropdown-menu');
-    
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        dropdownMenu.classList.toggle('active');
-      });
-    </script>
+    <footer class="footer__2">
+      <h1>@2023 KAHIAS. All rights reserved</h1>
+
+    </footer>
+  </script>
+  <!-- Swiper Carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>
