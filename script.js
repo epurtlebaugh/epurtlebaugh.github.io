@@ -1,3 +1,4 @@
+
 // Toggle the dropdown menu on hamburger click
 const hamburger = document.getElementById("hamburger");
 const dropdownMenu = document.getElementById("dropdown-menu");

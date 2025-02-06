@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAHIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Linking swiperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+ <div class="top-navbar">
+        <div class="social-icons-top">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i><span>(123) 456-7890</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i><span>123 Your St, City, Country</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i><span>Mon-Fri: 7:00AM - 5:00PM</span>
+            </div>
+        </div>
+        <div class="appointment-btn">
+            <button>MAKE AN APPOINTMENT</button>
+        </div>
+    </div>
+    <div class="nav__total">
+    <nav class ="navbar">
+      <i class="fa-duotone fa-solid fa-fingerprint logo_nav" style="--fa-primary-color: #2e96db; --fa-secondary-color: #e5ff00;"></i>
+      <span class="logo">KAHIAS</span>
+      </nav>
+      <nav class="nav-links-container">
+      <ul class="nav-links">
+        <li ><a href="about.html" class="nav__links">ABOUT US</a></li>
+        <li ><a href="services.html" class="nav__links">SERVICES</a></li>
+        <li ><a href="contact.html" class="nav__links">CONTACT</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+    <section class="hero">
+      <div class="hero__img"></div>
+      <div class="hero__title">
+        <h1 class="hero__logo">GOT A MESS THAT NEEDS <span class="cleaner">CLEANED?</span></h1>
+      </div>
+      
+      <div class="hero__paragraph">
+        <p class="hero__text">KAHIAS offers eco friendly, professional cleaning services that will fit your business or home needs. Call us today and add some SHINE to your facility or home!</p>
+      </div>
+      
+      <div class="writing-effect">
+        <span>WE ARE HERE TO HELP!</span>
+      </div>
+      <div class="wrap">
+        <button class="button__call">CALL US NOW</button>
+      </div>
+    </section>
+    <section class="contact__middle">
+     
+      <div class="contact__middle__call">
+        <i class="fa-solid fa-headset"></i>
+        <h3 class="contact__middle_title">Have a question? Call us today!</h3>
+        <h4 class="contact__middle_end"><a href="" class="contact__middle_number">(123) 456-7890</a></h4>
+      </div>
+      <div class="contact__middle__times">
+        <i class="fa-solid fa-clock"></i>
+        <h3 class="contact__middle_title">We are Open Monday to Friday</h3>
+        <h4 class="contact__middle_end">7:00AM - 5:00PM</h4>
+      </div>
+      <div class="contact__middle__email">
+        <i class="fa-solid fa-envelope"></i>
+        <h3 class="contact__middle_title">Need Help? Shoot us an email</h3>
+        <h4 class="contact__middle_end"><a href="" class="contact__middle_number">kahias@example.com</a></h4>
+      </div>
+   
+    </section>
+
+    <section class="about" id="about">
+      <div class="welcome">
+        <h3>Our Services</h3>
+        <h2>We are the Eco-Friendly, family run cleaners in town!</h2>
+      </div>
+      <div class="our__services">
+        <div class="floor">
+          <img src="floor.jpg" alt="" class="services__img" height="3901" width="5500">
+          <h2 class="services__title">Floor Cleaning</h2>
+          <p class ="services__description">We provide floor cleaning services.</p>
+          <i class="fa-solid fa-broom services__icon"></i>
+        </div>
+        <div class="window">
+          <img src="window.jpg" alt="" class="services__img"height="3431px" width="5147px">
+          <h2 class="services__title">Window Cleaning</h2>
+          <p class ="services__description">We provide window cleaning services.</p>
+          <i class="fa-regular fa-window-maximize services__icon"></i>
+        </div>
+        <div class="laundry">
+          <img src="laundry.jpg" alt="" class="services__img"height="4480px" width="6720px">
+          <h2 class="services__title">Laundry</h2>
+          <p class ="services__description">We provide laundry services.</p>
+          <i class="fa-solid fa-soap services__icon"></i>
+        </div>
+        <div class="ironing">
+          <img src="iron.jpg" alt="" class="services__img"height="4480px" width="6720px">
+          <h2 class="services__title">Ironing</h2>
+          <p class ="services__description">We provide ironing services.</p>
+          <i class="fa-solid fa-shirt services__icon"></i>
+        </div>
+        <div class="trash">
+          <img src="trash.jpg" alt="" class="services__img"height="3915px" width="5872px">
+          <h2 class="services__title">Trash Removal</h2>
+          <p class ="services__description">We provide trash removal services.</p>
+          <i class="fa-solid fa-trash-can services__icon"></i>
+        </div>
+        <div class="carpets">
+          <img src="carpet.jpg" alt="" class="services__img" height="3648px" width="5472px">
+          <h2 class="services__title">Carpets</h2>
+          <p class ="services__description">We provide carpet cleaning services.</p>
+          <i class="fa-solid fa-spray-can-sparkles services__icon"></i>
+        </div>
+
+      </div>
+      <div class="our__services_mobile">
+        <div class="services__mobile_section">
+          <img src="floor.jpg" alt="" class="services__img" height="3901" width="5500">
+          <h2 class="services__title">Floor Cleaning</h2>
+          <p class ="services__description">We provide floor cleaning services.</p>
+          <i class="fa-solid fa-broom services__icon"></i>
+        </div>
+        <div class="services__mobile_section">
+          <img src="window.jpg" alt="" class="services__img"height="3431px" width="5147px">
+          <h2 class="services__title">Window Cleaning</h2>
+          <p class ="services__description">We provide window cleaning services.</p>
+          <i class="fa-regular fa-window-maximize services__icon"></i>
+        </div>
+        <div class="services__mobile_section">
+          <img src="laundry.jpg" alt="" class="services__img"height="4480px" width="6720px">
+          <h2 class="services__title">Laundry</h2>
+          <p class ="services__description">We provide laundry services.</p>
+          <i class="fa-solid fa-soap services__icon"></i>
+        </div>
+        <div class="services__mobile_section">
+          <img src="iron.jpg" alt="" class="services__img"height="4480px" width="6720px">
+          <h2 class="services__title">Ironing</h2>
+          <p class ="services__description">We provide ironing services.</p>
+          <i class="fa-solid fa-shirt services__icon"></i>
+        </div>
+        <div class="services__mobile_section">
+          <img src="trash.jpg" alt="" class="services__img"height="3915px" width="5872px">
+          <h2 class="services__title">Trash Removal</h2>
+          <p class ="services__description">We provide trash removal services.</p>
+          <i class="fa-solid fa-trash-can services__icon"></i>
+        </div>
+        <div class="services__mobile_section">
+          <img src="carpet.jpg" alt="" class="services__img" height="3648px" width="5472px">
+          <h2 class="services__title">Carpets</h2>
+          <p class ="services__description">We provide carpet cleaning services.</p>
+          <i class="fa-solid fa-spray-can-sparkles services__icon"></i>
+        </div>
+
+      </div>
+      <div class="learn__more_button">
+        <a href="#about" class="learn__more">CLICK TO LEARN MORE</a>
+      </div>
+      
+    </section>
+    <section class="references__main">
+      <i class="fa-regular fa-clock clock__icon"></i>
+      <div class="references__header">
+       
+       
+        <h1 class="references__title">We Save you time</h3>
+        <h1 class="references__title_2">AND MONEY!</h4>
+      </div>
+      <div class="references">
+      <div class="references__items">
+        <h3 class="references__number" data-target="1000">1000+</h3>
+        <h4 class="references__words">Projects Completed</h4>
+      </div>
+      <div class="references__items">
+       
+        <h3 class="references__number" data-target="5">5</h3>
+        <h4 class="references__words">Local Branches</h4>
+      </div>
+      <div class="references__items">
+       
+        <h3 class="references__number" data-target="200">200+</h3>
+        <h4 class="references__words">Happy Customers</h4>
+      </div>
+      <div class="references__items">
+        
+        <h3 class="references__number" data-target="15">15</h3>
+        <h4 class="references__words">Years in the Business</h4>
+      </div>
+    </div>
+    </section>
+    <section class="benefits benefit__point_trigger">
+      <div class="benefit_wrapper">
+      <h2 class="benefit__header benefit__header_main ">Benefits of Hiring Us</h2>
+      <div class="benefit">
+      <div class="benefit__left">
+        <h2 class="benefit__header_2">What Makes Us Different?</h2>
+        <p class="benefit__explanation">We offer a wide range of services to meet your needs, including floor cleaning, window cleaning, laundry, ironing, trash removal, and carpet cleaning.</p>
+        <div class="benefit__point_container">
+          <div class="benefit__point_main">
+          <div class="benefit__icon">
+            <i class="fa-regular fa-circle-check" style="color: #42a0df;"></i>
+          </div>
+          <div class="benefit__point">
+          
+          <h2 class="benefit__point_header ">We are Eco-Friendly</h2>
+          <p class="benefit__point_explanation">We use eco-friendly products and materials</p>  
+        </div>
+      </div>
+        <div class="benefit__point_main">
+        <div class="benefit__icon">
+          <i class="fa-regular fa-circle-check" style="color: #42a0df;"></i>
+        </div>
+        <div class="benefit__point">
+          <h2 class="benefit__point_header">We are Professional</h2>
+          <p class="benefit__point_explanation">We have a reputation for providing exceptional service and customer satisfaction.</p>
+        </div>
+      </div>
+      <div class="benefit__point_main">
+        <div class="benefit__icon">
+          <i class="fa-regular fa-circle-check" style="color: #42a0df;"></i>
+        </div>
+        <div class="benefit__point">
+          <h2 class="benefit__point_header">We are Local</h2>
+          <p class="benefit__point_explanation ">We are located in the heart of our community.</p>
+        </div>
+        </div>  
+        </div>
+      </div>
+      <div class="benefit__right">
+        <img src="benefit.jpg" alt="cleaners" loading="lazy" height="3482px" width="5327px">
+      </div>
+    </div>
+  </div>
+    </section>
+    <section class="contact_us" id="contact">
+      <div class="contact">
+        <div class="contact__img">
+          <img src="contact.jpg" alt="lady with a phone" loading="lazy" height="3840px" width="5760px">
+        </div>
+        <div class="contact__area">
+        <h1 class="contact__header contact__header_homepage">HAVE A CLEANING QUESTION OR PROBLEM?</h2>
+        <h2 class="contact__title">Just fill out this form so our experts can reach out to you with a PROMO OFFER!</h1>
+      <div class="contact__form">
+
+
+        <!-- Add a form for contact information -->
+
+        <form>
+          <input type="text" placeholder="     Your Name" required  />
+          <i class="fa-solid fa-user aa"></i>
+          <input type="text" placeholder="     Your Email" required />
+          <i class="fa-solid fa-envelope bb"></i>
+          <input type="text" placeholder="     Subject" required />
+          <i class="fa-solid fa-tag cc"></i>
+          <i class="fa-solid fa-pen dd"></i>
+          <textarea
+            placeholder="    Your message"
+            required
+          ></textarea>
+          <br>
+          <br>
+          <button class="learn__more learn__submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    </section>
+    <section class="testimonials">
+      <section class="testimontial__headers">
+        <div class="testimonials__header">
+          <h1 class="testimonials__title">Testimonials</h1>        
+              </div>
+              <div class="testimonials__header_2">
+                <h1 class="testimonials__title_2">What Our Clients Say</h1>
+              </div>
+      </section>
+              <div class="container swiper"> 
+                <div class="slider-wrapper">
+                  <div class="card-list swiper-wrapper">
+                    <div class=" card-item swiper-slide ">
+                      <img src="tm1.jpg" alt="User Image" class="user-image"  height="3412px" width="5120px">
+                      <h2 class="user-name">John Doe</h2>
+                      <p class="user-profession">Office Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm2.jpg" alt="User Image" class="user-image"  height="2000px" width="2000px">
+                      <h2 class="user-name">Jane Doe</h2>
+                      <p class="user-profession">Home Owner</p>
+
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them"</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm3.jpg" alt="User Image" class="user-image" height="4160px" width="6240px">
+                      <h2 class="user-name">Jack Doe</h2>
+                      <p class="user-profession">Business Owner</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm4.jpg" alt="User Image" class="user-image" height="4480px" width="6720px">
+                      <h2 class="user-name">Jackie Doe</h2>
+                      <p class="user-profession">Home Owner</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm5.jpg" alt="User Image" class="user-image"  height="3840px" width="2160px">
+                      <h2 class="user-name">Justin Doe</h2>
+                      <p class="user-profession">Office Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm6.jpg" alt="User Image" class="user-image"  height="4480px" width="6720px">
+                      <h2 class="user-name">Justine Doe</h2>
+                      <p class="user-profession">Hotel Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm7.jpg" alt="User Image" class="user-image"  height="3024px" width="3024px">
+                      <h2 class="user-name">Jackson Doe</h2>
+                      <p class="user-profession">Home Owner</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                    <div class=" card-item swiper-slide">
+                      <img src="tm8.jpg" alt="User Image" class="user-image"  height="3840px" width="5760px">
+                      <h2 class="user-name">Johnny Doe</h2>
+                      <p class="user-profession">Office Manager</p>
+                      <p class="user-review">"I had a great experience with your service. The staff was friendly and helpful. The service was clean and efficient. I would highly recommend them".</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide-button swiper-button-prev"></div>
+                  <div class="swiper-slide-button swiper-button-next"></div>
+      
+              </div>
+      </div>
+    </section>
+   <section class="affiliates">
+     <div class="affiliates__content">
+       <div class="affiliates__logos">
+         <img src="logo1.png" class= "affiliates__logo" alt="Affiliate Logo 1" loading="lazy" height="400px" width="400px">
+         <img src="logo2.png" class= "affiliates__logo" alt="Affiliate Logo 2" loading="lazy" height="400px" width="400px">
+         <img src="logo3.png" class= "affiliates__logo" alt="Affiliate Logo 3" loading="lazy" height="400px" width="400px">
+         <img src="logo4.png" class= "affiliates__logo" alt="Affiliate Logo 4" loading="lazy" height="400px" width="400px">
+         <img src="logo5.png" class= "affiliates__logo" alt="Affiliate Logo 5" loading="lazy" height="400px" width="400px">
+         <img src="logo6.png" class= "affiliates__logo" alt="Affiliate Logo 6" loading="lazy" height="400px" width="400px">
+       </div>
+     </div>
+   </section>  
+   <section class="book">
+    <div class="book__wrapper">
+     <div class="book__header">
+       <h1 class="book__title">Save Time</h1>
+       <p class="book__description">Book your appointment today</p>
+     </div>
+     <div class="book__cards">
+      <div class="book__card card__1">
+        <i class="fa-solid fa-house-laptop"></i>
+        <div class="price"><h3>$</h3><h1>29.99</h1><h2>/month</h2></div>
+        <h2 class="card__title">HOME / OFFICE</h2>
+        <h3 class="card__subtitle">UP TO 20 CLEANINGS /MONTH</h3>
+        <p class="card__text">Our experts will discuss all the details of your cleaning needs and what we can offer</p>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-window-maximize"></i><h2>Window Cleaning</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-shirt"></i><h2>Laundry</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-trash"></i><h2>Trash</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-broom"></i><h2>Floors</h2></div>
+        <div class="make__appt">
+          <button class="make__appt_button">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+        </div>
+       </div>
+       <div class="book__card card__2" >
+        <i class="fa-solid fa-building"></i>
+        <div class="price"><h3>$</h3><h1>59.99</h1><h2>/month</h2></div>
+        <h2 class="card__title">COMMERICIAL</h2>
+        <h3 class="card__subtitle">UP TO 20 CLEANINGS /MONTH</h3>
+        <p class="card__text">Our experts will discuss all the details of your cleaning needs and what we can offer</p>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-window-maximize"></i><h2>Window Cleaning</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-shirt"></i><h2>Laundry</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-trash"></i><h2>Trash</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-broom"></i><h2>Floors</h2></div>
+        <div class="make__appt">
+          <button class="make__appt_button">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+        </div>
+       </div>
+       <div class="book__card card__3">
+        <i class="fa-solid fa-credit-card"></i>
+        <div class="price"><h3>$</h3><h1>79.99</h1><h2>/month</h2></div>
+        <h2 class="card__title">INDUSTRIAL</h2>
+        <h3 class="card__subtitle">UP TO 20 CLEANINGS /MONTH</h3>
+        <p class="card__text">Our experts will discuss all the details of your cleaning needs and what we can offer</p>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-window-maximize"></i><h2>Window Cleaning</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-shirt"></i><h2>Laundry</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-trash"></i><h2>Trash</h2></div>
+        <div class="offered__cleaning_book"><i class="fa-solid fa-broom"></i><h2>Floors</h2></div>
+        <div class="make__appt">
+          <button class="make__appt_button ">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+        </div>
+       </div>
+       
+     </div>
+    
+    </div>
+    <div class="make__appt_small_screen">
+      <button class="appt__button_smallscreen">MAKE AN APPOINTMENT &nbsp;&nbsp;></button>
+    </div>
+   </section>
+   <section class="google__map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.662212123615!2d-85.987341!3d41.671534999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881c5a6f9c2f6f5f%3A0x94c5b9e5a1b1b80a!2s60196%20Pembrook%20Ln%2C%20Elkhart%2C%20IN%2046517%2C%20USA!5e0!3m2!1sen!2sph!4v1680000000!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="ready">
+    <div class="header"><h1>Ready to book your first cleaning?</h1></div>
+    <div class="ready__button">
+      <button class="ready__button_button">Contact Us</button>
+    </div>
+   </section>
+    <footer class="footer__1">
+      <div class="first__column">
+        <div class="navbar">
+        <i class="fa-duotone fa-solid fa-fingerprint logo_nav"></i>
+        <span class="logo">KAHIAS</span>
+      </div>
+        <h2>We are here to help, don't hesitate to contact us today and book your first consultation</h2>
+        <div class="footer__icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="second__column">
+        <div class="address">
+        <h1>Address</h1>
+        <p>60196 Pembrook Ln, Elkhart, IN 46517, USA</p>
+      </div>
+      <div class="phone">
+        <h1>Phone</h1>
+        <p>1(800) 456-7890</p>
+      </div>
+      <div class="hours">
+        <h1>Hours</h1>
+        <p>Mon-Fri: 7:00AM - 5:00PM</p>
+      </div>
+      </div>
+      <div class="third__column">
+        <h1>Subscribe</h1>
+        <p>Sign up for our newsletter and latest offers</p>
+        <form action="">
+          <input type="email" placeholder="Enter your email">
+          <div class="input__button">
+          <button type="submit">Subscribe</button>
+        </div>
+        </form>
+      </div>
+    
+    </footer>
+    <footer class="footer__2">
+      <h1>@2023 KAHIAS. All rights reserved</h1>
+
+    </footer>
+  </script>
+  <!-- Swiper Carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
