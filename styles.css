@@ -6,6 +6,8 @@
 html, body {
   overflow-x: hidden !important;
   width: 100vw;
+  display: inline;
+ 
 }
 .top-navbar {
   font-family: "roboto", arial, helvetica, sans-serif;
@@ -15,6 +17,10 @@ html, body {
   background-color: #2e96db;
   color: white;
   padding: 0 40rem;
+  z-index: 1000; /* Add z-index to ensure visibility */
+  top: 0;
+  left: 0;
+  width: 100%;  
 }
 
 .social-icons-top {
@@ -131,17 +137,14 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-items: center;
   background-color: #f5f2f2;
   box-shadow: 0 15px 5px rgba(5, 30, 2, 0.255);
   color: #131313;
-  display: flex;
-  justify-content: space-between;
   padding: 1rem;
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 1999;
 }
 .nav__links {
   font-size: 1.5rem;
@@ -1968,7 +1971,12 @@ padding-right: 8rem !important;
 .contact__area_3{
   margin-right: 7rem !important;
 }
-
+@media (max-width: 2560px) {
+  .benefit__explination_2_laundry{
+    width: 100% !important;
+    line-height: 1.5rem !important;
+  }
+}
 @media (max-width: 2280px) {
   .serve__two{
     transform: translateX(-10%);
@@ -1976,6 +1984,7 @@ padding-right: 8rem !important;
   .serve__three{
     transform: translateX(-20%);
   }
+ 
 }
 
 @media (max-width: 1920px) {
@@ -2184,6 +2193,7 @@ padding-right: 8rem !important;
   .benefit__explination_2{
     line-height:normal;
   }
+  
   .learn__more__container{
     padding-top: 2rem;
     padding-bottom: .3rem !important;
@@ -2214,6 +2224,9 @@ padding-right: 8rem !important;
     width: 80% !important;
     text-align: center !important;
 
+  }
+  .swiper{
+    transform: translateX(-1rem) !important;
   }
 }
 
