@@ -2225,9 +2225,7 @@ padding-right: 8rem !important;
     text-align: center !important;
 
   }
-  .swiper{
-    transform: translateX(-1rem) !important;
-  }
+ 
 }
 
 @media (max-width: 1680px) {
@@ -2770,6 +2768,14 @@ padding-right: 8rem !important;
     margin-left: -10rem;
     margin-top: -1rem !important;
   }
+  .contact__header{
+    font-size: 2rem !important;
+    width: 130% !important;
+  }
+  .contact__title{
+    font-size: 1.5rem !important;
+    width: 100% !important;
+  }
   .contact__img img{
     transform: scale(1.5);
   }
@@ -2817,6 +2823,9 @@ padding-right: 8rem !important;
     .contact_us_2{
       padding-top: 6rem !important;
       padding-bottom: 6rem !important;
+    }
+    .swiper{
+      transform: translateX(-1rem) !important;
     }
    }
 /* Medium Devices (tablets, 992px and up) */
@@ -2913,6 +2922,12 @@ margin-top: 5rem !important;
 }
 .david{
   margin-top: 2rem !important;
+}
+.swiper{
+  transform: translateX(-2.5rem) !important;
+}
+.testimontial__headers{
+  transform: translateX(-2.5rem) !important;
 }
 }
 
