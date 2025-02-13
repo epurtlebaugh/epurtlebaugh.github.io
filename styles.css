@@ -3744,7 +3744,7 @@ z-index: -2; /* make it appear behind the section */
  .get__in_touch_sections{
   display: flex !important;
   flex-direction: column;
-  transform: translateY(-1rem) scale(0.9)!important;
+  transform: translateY(-5rem) scale(0.9)!important;
   gap: 1rem !important;
  }
  .get__in_touch{
@@ -3794,6 +3794,14 @@ display: none !important;
       min-height: 160vh !important;
      }
  }  
+ @media screen and (max-height: 760px){
+  .get__in_touch_sections{
+    transform: scale(0.7) translateY(-20rem)!important;
+   }
+   .get__in_touch{
+    min-height: 20vh !important;
+   }
+ }
  @media screen and (max-height: 640px) {
   .first__column,
    .second__column,
