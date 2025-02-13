@@ -1,4 +1,3 @@
-
 // Toggle the dropdown menu on hamburger click
 const hamburger = document.getElementById("hamburger");
 const dropdownMenu = document.getElementById("dropdown-menu");
@@ -7,36 +6,40 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   dropdownMenu.classList.toggle("active");
 });
-//Trigger Annimation
+
+// Trigger Animation
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(
     ".floor, .window, .laundry, .ironing, .trash, .carpets"
   );
   const laundry = document.querySelector(".laundry"); // Target the laundry div
 
-  // Create an IntersectionObserver to watch the .laundry div
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Only trigger the animation when the .laundry div is in view
-          cards.forEach((card, index) => {
-            // Add a delay based on the card's index, ensuring that each one animates in order
-            setTimeout(() => {
-              card.classList.add("card-visible");
-            }, index * 900); // 500ms delay for each card
-          });
-          observer.unobserve(entry.target); // Stop observing once the laundry div is in view
-        }
-      });
-    },
-    {
-      threshold: 1.0, // The entire laundry div must be visible
-    }
-  );
+  if (laundry) { // Check if the laundry element exists
+    // Create an IntersectionObserver to watch the .laundry div
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Only trigger the animation when the .laundry div is in view
+            cards.forEach((card, index) => {
+              // Add a delay based on the card's index, ensuring that each one animates in order
+              setTimeout(() => {
+                card.classList.add("card-visible");
+              }, index * 900); // 900ms delay for each card
+            });
+            observer.unobserve(entry.target); // Stop observing once the laundry div is in view
+          }
+        });
+      },
+      {
+        threshold: 1.0, // The entire laundry div must be visible
+      }
+    );
 
-  observer.observe(laundry); // Observe the .laundry div
+    observer.observe(laundry); // Observe the .laundry div
+  }
 });
+
 // Function to animate the number counting up
 function animateNumber(element, target) {
   const start = 0;
@@ -79,39 +82,44 @@ const observer = new IntersectionObserver(
     });
   },
   { threshold: 0.5 }
-); // Adjust the threshold as needed
+);
 
 // Observe each number div
 document.querySelectorAll(".references__number").forEach((number) => {
-  observer.observe(number);
+  if (number) { // Check if the number element exists
+    observer.observe(number);
+  }
 });
-//Trigger Annimation for Benefits Section for each benefit__icon
+
+// Trigger Animation for Benefits Section for each benefit__icon
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".benefit__icon");
   const benefits = document.querySelector(".benefit__point_trigger"); // Target
 
-  // Create an IntersectionObserver to watch the .benefit__point_trigger
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Only trigger the animation when the benefit__point_trigger is in view
-          cards.forEach((card, index) => {
-            // Add a delay based on the card's index, ensuring that each one animates in order
-            setTimeout(() => {
-              card.classList.add("benefit-visible");
-            }, index * 700); // 500ms delay for each card
-          });
-          observer.unobserve(entry.target); // Stop observing once  in view
-        }
-      });
-    },
-    {
-      threshold: 1.0, // The entire  must be visible
-    }
-  );
+  if (benefits) { // Check if the benefits element exists
+    // Create an IntersectionObserver to watch the .benefit__point_trigger
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Only trigger the animation when the benefit__point_trigger is in view
+            cards.forEach((card, index) => {
+              // Add a delay based on the card's index, ensuring that each one animates in order
+              setTimeout(() => {
+                card.classList.add("benefit-visible");
+              }, index * 700); // 700ms delay for each card
+            });
+            observer.unobserve(entry.target); // Stop observing once in view
+          }
+        });
+      },
+      {
+        threshold: 1.0, // The entire benefits element must be visible
+      }
+    );
 
-  observer.observe(benefits); // Observe
+    observer.observe(benefits); // Observe
+  }
 });
 //Slider
 const swiper = new Swiper(".slider-wrapper", {
